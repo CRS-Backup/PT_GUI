@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49E81BF1-CBD5-419B-8A96-76EE32EA1C64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PtGui</RootNamespace>
+    <AssemblyName>PtGui</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main\Constants.cs" />
+    <Compile Include="Main\DataStore.cs" />
+    <Compile Include="FileHandling\FileSystemWatcher.cs" />
+    <Compile Include="FileHandling\file_IO.cs" />
+    <Compile Include="Pages\FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FormTest.designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmActiveMalfunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmActiveMalfunctions.designer.cs">
+      <DependentUpon>frmActiveMalfunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmBackTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmBackTrack.designer.cs">
+      <DependentUpon>frmBackTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmConseqMalfunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmConseqMalfunctions.designer.cs">
+      <DependentUpon>frmConseqMalfunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmDGMalfunctions1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmDGMalfunctions1.designer.cs">
+      <DependentUpon>frmDGMalfunctions1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmDGMalfunctions2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmDGMalfunctions2.designer.cs">
+      <DependentUpon>frmDGMalfunctions2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmDGMalfunctions3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmDGMalfunctions3.designer.cs">
+      <DependentUpon>frmDGMalfunctions3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmDiscrepancies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmDiscrepancies.designer.cs">
+      <DependentUpon>frmDiscrepancies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmElecMalfunctions1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmElecMalfunctions1.designer.cs">
+      <DependentUpon>frmElecMalfunctions1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmElecMalfunctions2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmElecMalfunctions2.designer.cs">
+      <DependentUpon>frmElecMalfunctions2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmElecOverrides.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmElecOverrides.designer.cs">
+      <DependentUpon>frmElecOverrides.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmExternalCond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmExternalCond.Designer.cs">
+      <DependentUpon>frmExternalCond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmFAMRDiscrepancies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmFAMRDiscrepancies.designer.cs">
+      <DependentUpon>frmFAMRDiscrepancies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmFAMROverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmFAMROverview.designer.cs">
+      <DependentUpon>frmFAMROverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmGBMalfunctions1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmGBMalfunctions1.designer.cs">
+      <DependentUpon>frmGBMalfunctions1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmGTRDiscrepancies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmGTRDiscrepancies.designer.cs">
+      <DependentUpon>frmGTRDiscrepancies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmSeaState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmSeaState.Designer.cs">
+      <DependentUpon>frmSeaState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMaintMalfunctions1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMaintMalfunctions1.designer.cs">
+      <DependentUpon>frmMaintMalfunctions1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMaintMalfunctions2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMaintMalfunctions2.designer.cs">
+      <DependentUpon>frmMaintMalfunctions2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMGRDiscrepancies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMGRDiscrepancies.designer.cs">
+      <DependentUpon>frmMGRDiscrepancies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfCW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfCW.designer.cs">
+      <DependentUpon>frmMiscMalfCW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfDesal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfDesal.designer.cs">
+      <DependentUpon>frmMiscMalfDesal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfFuel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfFuel.designer.cs">
+      <DependentUpon>frmMiscMalfFuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfHPAir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfHPAir.designer.cs">
+      <DependentUpon>frmMiscMalfHPAir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfHPSW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfHPSW.designer.cs">
+      <DependentUpon>frmMiscMalfHPSW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfNBCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfNBCD.designer.cs">
+      <DependentUpon>frmMiscMalfNBCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMiscMalfunctions.designer.cs">
+      <DependentUpon>frmMiscMalfunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmOtherOverrides.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmOtherOverrides.designer.cs">
+      <DependentUpon>frmOtherOverrides.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmOutstationMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmOutstationMenu.designer.cs">
+      <DependentUpon>frmOutstationMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmOutstationMenuBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmOutstationMenuBar.designer.cs">
+      <DependentUpon>frmOutstationMenuBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmPanelOverrides.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmPanelOverrides.designer.cs">
+      <DependentUpon>frmPanelOverrides.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmPropMalfunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmPropMalfunctions.designer.cs">
+      <DependentUpon>frmPropMalfunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmSnapShot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmSnapShot.designer.cs">
+      <DependentUpon>frmSnapShot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmSwitchboards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmSwitchboards.Designer.cs">
+      <DependentUpon>frmSwitchboards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmPropOverrides.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmPropOverrides.Designer.cs">
+      <DependentUpon>frmPropOverrides.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmGTMalfunctions2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmGTMalfunctions2.Designer.cs">
+      <DependentUpon>frmGTMalfunctions2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmLPSW1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmLPSW1.Designer.cs">
+      <DependentUpon>frmLPSW1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmLPSW2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmLPSW2.Designer.cs">
+      <DependentUpon>frmLPSW2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMGROverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMGROverview.Designer.cs">
+      <DependentUpon>frmMGROverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmGTROverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmGTROverview.Designer.cs">
+      <DependentUpon>frmGTROverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmGTMalfunctions1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmGTMalfunctions1.Designer.cs">
+      <DependentUpon>frmGTMalfunctions1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmUAMRDiscrepancies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmUAMRDiscrepancies.designer.cs">
+      <DependentUpon>frmUAMRDiscrepancies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmResets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmResets.Designer.cs">
+      <DependentUpon>frmResets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmInitialCond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmInitialCond.Designer.cs">
+      <DependentUpon>frmInitialCond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmNumberKeypad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmNumberKeypad.Designer.cs">
+      <DependentUpon>frmNumberKeypad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmLoadChanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmLoadChanges.Designer.cs">
+      <DependentUpon>frmLoadChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMainLubOil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMainLubOil.Designer.cs">
+      <DependentUpon>frmMainLubOil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmPanelTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmPanelTest.Designer.cs">
+      <DependentUpon>frmPanelTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmMasterPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMasterPanel.Designer.cs">
+      <DependentUpon>frmMasterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmCW_LCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmCW_LCP.Designer.cs">
+      <DependentUpon>frmCW_LCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmFuelBoost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmFuelBoost.Designer.cs">
+      <DependentUpon>frmFuelBoost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frm3wayPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frm3wayPopUp.Designer.cs">
+      <DependentUpon>frm3wayPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\utils.cs" />
+    <Compile Include="Pages\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\frmGB_LCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmGB_LCP.Designer.cs">
+      <DependentUpon>frmGB_LCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileHandling\pnlLocalControlGreen.cs" />
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Pages\frmUAMROverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmUAMROverview.designer.cs">
+      <DependentUpon>frmUAMROverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\frmFuelTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\frmFuelTransfer.Designer.cs">
+      <DependentUpon>frmFuelTransfer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Pages\FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmActiveMalfunctions.resx">
+      <DependentUpon>frmActiveMalfunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmBackTrack.resx">
+      <DependentUpon>frmBackTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmConseqMalfunctions.resx">
+      <DependentUpon>frmConseqMalfunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmDGMalfunctions1.resx">
+      <DependentUpon>frmDGMalfunctions1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmDGMalfunctions2.resx">
+      <DependentUpon>frmDGMalfunctions2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmDGMalfunctions3.resx">
+      <DependentUpon>frmDGMalfunctions3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmDiscrepancies.resx">
+      <DependentUpon>frmDiscrepancies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmElecMalfunctions1.resx">
+      <DependentUpon>frmElecMalfunctions1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmElecMalfunctions2.resx">
+      <DependentUpon>frmElecMalfunctions2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmElecOverrides.resx">
+      <DependentUpon>frmElecOverrides.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmFAMRDiscrepancies.resx">
+      <DependentUpon>frmFAMRDiscrepancies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmFAMROverview.resx">
+      <DependentUpon>frmFAMROverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmGBMalfunctions1.resx">
+      <DependentUpon>frmGBMalfunctions1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmGTRDiscrepancies.resx">
+      <DependentUpon>frmGTRDiscrepancies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmSeaState.resx">
+      <DependentUpon>frmSeaState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmExternalCond.resx">
+      <DependentUpon>frmExternalCond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMaintMalfunctions1.resx">
+      <DependentUpon>frmMaintMalfunctions1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMaintMalfunctions2.resx">
+      <DependentUpon>frmMaintMalfunctions2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMGRDiscrepancies.resx">
+      <DependentUpon>frmMGRDiscrepancies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMiscMalfCW.resx">
+      <DependentUpon>frmMiscMalfCW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMiscMalfDesal.resx">
+      <DependentUpon>frmMiscMalfDesal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMiscMalfFuel.resx">
+      <DependentUpon>frmMiscMalfFuel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMiscMalfHPAir.resx">
+      <DependentUpon>frmMiscMalfHPAir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMiscMalfHPSW.resx">
+      <DependentUpon>frmMiscMalfHPSW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMiscMalfNBCD.resx">
+      <DependentUpon>frmMiscMalfNBCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMiscMalfunctions.resx">
+      <DependentUpon>frmMiscMalfunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmOtherOverrides.resx">
+      <DependentUpon>frmOtherOverrides.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmOutstationMenu.resx">
+      <DependentUpon>frmOutstationMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmOutstationMenuBar.resx">
+      <DependentUpon>frmOutstationMenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmPanelOverrides.resx">
+      <DependentUpon>frmPanelOverrides.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmPropMalfunctions.resx">
+      <DependentUpon>frmPropMalfunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmSnapShot.resx">
+      <DependentUpon>frmSnapShot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmSwitchboards.resx">
+      <DependentUpon>frmSwitchboards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmPropOverrides.resx">
+      <DependentUpon>frmPropOverrides.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmGTMalfunctions2.resx">
+      <DependentUpon>frmGTMalfunctions2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmLPSW1.resx">
+      <DependentUpon>frmLPSW1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmLPSW2.resx">
+      <DependentUpon>frmLPSW2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMGROverview.resx">
+      <DependentUpon>frmMGROverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmGTROverview.resx">
+      <DependentUpon>frmGTROverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmGTMalfunctions1.resx">
+      <DependentUpon>frmGTMalfunctions1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmUAMRDiscrepancies.resx">
+      <DependentUpon>frmUAMRDiscrepancies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmResets.resx">
+      <DependentUpon>frmResets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmInitialCond.resx">
+      <DependentUpon>frmInitialCond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmNumberKeypad.resx">
+      <DependentUpon>frmNumberKeypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmLoadChanges.resx">
+      <DependentUpon>frmLoadChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMainLubOil.resx">
+      <DependentUpon>frmMainLubOil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmPanelTest.resx">
+      <DependentUpon>frmPanelTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmMasterPanel.resx">
+      <DependentUpon>frmMasterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmCW_LCP.resx">
+      <DependentUpon>frmCW_LCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmFuelBoost.resx">
+      <DependentUpon>frmFuelBoost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frm3wayPopUp.resx">
+      <DependentUpon>frm3wayPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmGB_LCP.resx">
+      <DependentUpon>frmGB_LCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\frmUAMROverview.resx">
+      <DependentUpon>frmUAMROverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pages\frmFuelTransfer.resx">
+      <DependentUpon>frmFuelTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CrsControls\CRSControlsLib.csproj">
+      <Project>{6543dfc4-7aa7-450a-a437-8d15b658fd6c}</Project>
+      <Name>CRSControlsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PtGui
+{
+    class Constants
+    {
+        public const int tabPageMain = 0;
+        public const int tabPagePropulsion = 1;
+
+        public static System.Drawing.Color BACKGROUND_OFF = Color.Red;
+        public static System.Drawing.Color BACKGROUND_ON = Color.Blue;
+
+        public const string DIGITAL_OFF = "0";
+        public const string DIGITAL_ON = "1";
+
+        public const string ROOT_FOLDER = "c:/temp/PT_GUI_data/";
+
+        //Bitmaps
+        public const string BMP_FOLDER = ROOT_FOLDER + "resources/Bitmaps/";
+        public const string BMP_BUTTON_RED_DOWN = BMP_FOLDER + "rect_button_red_pressed.bmp";
+        public const string BMP_BUTTON_RED_UP = BMP_FOLDER + "rect_button_red.bmp";
+
+        public const string BMP_BUTTON_GREEN_DOWN = BMP_FOLDER + "green_button_l_pressed.bmp";
+        public const string BMP_BUTTON_GREEN_UP = BMP_FOLDER + "green_button_l.bmp";
+
+        //data types
+        public const int DATA_TYPE_INPUTS = 0;
+        public const int DATA_TYPE_INTERNALS = 1;
+        public const int DATA_TYPE_OUTPUTS = 2;
+
+    }
+}
