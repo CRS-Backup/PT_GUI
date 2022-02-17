@@ -36,22 +36,17 @@ namespace PtGui
 			GuiCore.show_form("frmOutstationMenu", null);
 		}
 
-		private void pnlH2VLV_MouseDown(object sender, MouseEventArgs e)
+		private void pnlH2VLV_Click(object sender, EventArgs e)
 		{
-			Bitmap bitmap = new Bitmap(Constants.BMP_VALVE3_OPENED);
-			pnlH2VLV.BackgroundImage = bitmap;
-
-		//	GuiCore.set_channel_value("LFRIV18", "true");
-
-			GuiCore.toggle_channel(sender, pnlH2VLV, "LFRIV18", Constants.BMP_RECT_BUTTON_GREEN_DOWN, Constants.BMP_RECT_BUTTON_GREEN_UP, "ON", "OFF");
+			GuiCore.toggle_channel(sender, "LFRIV18", Constants.BMP_VALVE3_OPENED, Constants.BMP_VALVE3_CLOSED);
+			// LFRV18CS
 		}
 
-		private void pnlH2VLV_MouseUp(object sender, MouseEventArgs e)
+		private void pnlH1VLV_Click(object sender, EventArgs e)
 		{
-		//	Bitmap bitmap = new Bitmap(Constants.BMP_VALVE3_CLOSED);
-		//	pnlH2VLV.BackgroundImage = bitmap;
+			GuiCore.toggle_channel(sender, "LFRIV17", Constants.BMP_VALVE3_OPENED, Constants.BMP_VALVE3_CLOSED);
+			// LFRV17CS
 
-		//	GuiCore.set_channel_value("LFRIV18", "false");
 		}
 	}
 }

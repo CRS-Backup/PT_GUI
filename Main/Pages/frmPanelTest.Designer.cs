@@ -182,9 +182,6 @@ namespace PtGui
 			this.pnlAftSE.Name = "pnlAftSE";
 			this.pnlAftSE.Size = new System.Drawing.Size(140, 71);
 			this.pnlAftSE.TabIndex = 9;
-			this.pnlAftSE.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlAftSE_MouseClick);
-			this.pnlAftSE.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlAftSE_MouseDown);
-			this.pnlAftSE.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlAftSE_MouseUp);
 			// 
 			// lblAftSE
 			// 
@@ -197,9 +194,7 @@ namespace PtGui
 			this.lblAftSE.TabIndex = 0;
 			this.lblAftSE.Text = "Aft SECP";
 			this.lblAftSE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lblAftSE.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlAftSE_MouseClick);
-			this.lblAftSE.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlAftSE_MouseDown);
-			this.lblAftSE.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlAftSE_MouseUp);
+			this.lblAftSE.Click += new System.EventHandler(this.lblAftSE_Click);
 			// 
 			// pnlHotel
 			// 
@@ -430,6 +425,8 @@ namespace PtGui
 			this.pnlCW.Name = "pnlCW";
 			this.pnlCW.Size = new System.Drawing.Size(140, 71);
 			this.pnlCW.TabIndex = 5;
+			this.pnlCW.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlCW_MouseDown);
+			this.pnlCW.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlCW_MouseUp);
 			// 
 			// lblCW
 			// 
@@ -442,6 +439,8 @@ namespace PtGui
 			this.lblCW.TabIndex = 0;
 			this.lblCW.Text = "Chilled Water";
 			this.lblCW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblCW.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlCW_MouseDown);
+			this.lblCW.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlCW_MouseUp);
 			// 
 			// pnlTop
 			// 

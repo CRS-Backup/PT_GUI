@@ -53,7 +53,7 @@ namespace PtGui
 			this.lblLABEL1.Name = "lblLABEL1";
 			this.lblLABEL1.Size = new System.Drawing.Size(123, 57);
 			this.lblLABEL1.TabIndex = 0;
-			this.lblLABEL1.Text = "No2 Boost Pp Discharge";
+			this.lblLABEL1.Text = "Tank Text";
 			this.lblLABEL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// pnlVLV1

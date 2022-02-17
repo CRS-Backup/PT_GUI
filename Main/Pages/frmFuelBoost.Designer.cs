@@ -328,12 +328,11 @@ namespace PtGui
 			// 
 			this.pnlH2VLV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlH2VLV.BackgroundImage")));
 			this.pnlH2VLV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlH2VLV.Location = new System.Drawing.Point(117, 343);
+			this.pnlH2VLV.Location = new System.Drawing.Point(117, 342);
 			this.pnlH2VLV.Name = "pnlH2VLV";
 			this.pnlH2VLV.Size = new System.Drawing.Size(33, 33);
 			this.pnlH2VLV.TabIndex = 24;
-			this.pnlH2VLV.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlH2VLV_MouseDown);
-			this.pnlH2VLV.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlH2VLV_MouseUp);
+			this.pnlH2VLV.Click += new System.EventHandler(this.pnlH2VLV_Click);
 			// 
 			// lblTOH2
 			// 
@@ -387,6 +386,7 @@ namespace PtGui
 			this.pnlH1VLV.Name = "pnlH1VLV";
 			this.pnlH1VLV.Size = new System.Drawing.Size(33, 33);
 			this.pnlH1VLV.TabIndex = 25;
+			this.pnlH1VLV.Click += new System.EventHandler(this.pnlH1VLV_Click);
 			// 
 			// pnlTOF2VLV
 			// 

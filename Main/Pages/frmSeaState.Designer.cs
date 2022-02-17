@@ -34,19 +34,18 @@ namespace PtGui
 			this.pnlCANCEL = new System.Windows.Forms.Panel();
 			this.lblCANCEL = new System.Windows.Forms.Label();
 			this.pnlCalm = new System.Windows.Forms.Panel();
-			this.lbl800kWb = new System.Windows.Forms.Label();
 			this.lblCalm = new System.Windows.Forms.Label();
 			this.pnlAverage = new System.Windows.Forms.Panel();
 			this.lblAverage = new System.Windows.Forms.Label();
 			this.pnlRough = new System.Windows.Forms.Panel();
 			this.lblRough = new System.Windows.Forms.Label();
-			this.pnl1400kW = new System.Windows.Forms.Panel();
-			this.lbl1400kW = new System.Windows.Forms.Label();
+			this.lbl800kWb = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.pnlCANCEL.SuspendLayout();
 			this.pnlCalm.SuspendLayout();
 			this.pnlAverage.SuspendLayout();
 			this.pnlRough.SuspendLayout();
-			this.pnl1400kW.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// lblLABEL1
@@ -55,9 +54,9 @@ namespace PtGui
 			this.lblLABEL1.ForeColor = System.Drawing.Color.White;
 			this.lblLABEL1.Location = new System.Drawing.Point(73, 51);
 			this.lblLABEL1.Name = "lblLABEL1";
-			this.lblLABEL1.Size = new System.Drawing.Size(137, 114);
+			this.lblLABEL1.Size = new System.Drawing.Size(84, 114);
 			this.lblLABEL1.TabIndex = 0;
-			this.lblLABEL1.Text = "Sea State";
+			this.lblLABEL1.Text = "Set Sea State";
 			this.lblLABEL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// pnlCANCEL
@@ -90,25 +89,11 @@ namespace PtGui
 			this.pnlCalm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.pnlCalm.Controls.Add(this.lbl800kWb);
 			this.pnlCalm.Controls.Add(this.lblCalm);
-			this.pnlCalm.Location = new System.Drawing.Point(262, 36);
+			this.pnlCalm.Location = new System.Drawing.Point(335, 36);
 			this.pnlCalm.Name = "pnlCalm";
 			this.pnlCalm.Size = new System.Drawing.Size(150, 149);
 			this.pnlCalm.TabIndex = 4;
 			this.pnlCalm.Click += new System.EventHandler(this.pnlCalm_Click);
-			// 
-			// lbl800kWb
-			// 
-			this.lbl800kWb.AutoSize = true;
-			this.lbl800kWb.BackColor = System.Drawing.Color.Transparent;
-			this.lbl800kWb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl800kWb.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.lbl800kWb.Location = new System.Drawing.Point(53, 90);
-			this.lbl800kWb.Name = "lbl800kWb";
-			this.lbl800kWb.Size = new System.Drawing.Size(46, 20);
-			this.lbl800kWb.TabIndex = 1;
-			this.lbl800kWb.Text = "Base";
-			this.lbl800kWb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lbl800kWb.Click += new System.EventHandler(this.pnlCalm_Click);
 			// 
 			// lblCalm
 			// 
@@ -116,7 +101,7 @@ namespace PtGui
 			this.lblCalm.BackColor = System.Drawing.Color.Transparent;
 			this.lblCalm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblCalm.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.lblCalm.Location = new System.Drawing.Point(42, 58);
+			this.lblCalm.Location = new System.Drawing.Point(42, 51);
 			this.lblCalm.Name = "lblCalm";
 			this.lblCalm.Size = new System.Drawing.Size(69, 29);
 			this.lblCalm.TabIndex = 0;
@@ -128,8 +113,9 @@ namespace PtGui
 			// 
 			this.pnlAverage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlAverage.BackgroundImage")));
 			this.pnlAverage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlAverage.Controls.Add(this.label1);
 			this.pnlAverage.Controls.Add(this.lblAverage);
-			this.pnlAverage.Location = new System.Drawing.Point(450, 36);
+			this.pnlAverage.Location = new System.Drawing.Point(523, 36);
 			this.pnlAverage.Name = "pnlAverage";
 			this.pnlAverage.Size = new System.Drawing.Size(150, 149);
 			this.pnlAverage.TabIndex = 5;
@@ -141,7 +127,7 @@ namespace PtGui
 			this.lblAverage.BackColor = System.Drawing.Color.Transparent;
 			this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblAverage.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.lblAverage.Location = new System.Drawing.Point(25, 59);
+			this.lblAverage.Location = new System.Drawing.Point(25, 51);
 			this.lblAverage.Name = "lblAverage";
 			this.lblAverage.Size = new System.Drawing.Size(102, 29);
 			this.lblAverage.TabIndex = 0;
@@ -153,8 +139,9 @@ namespace PtGui
 			// 
 			this.pnlRough.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlRough.BackgroundImage")));
 			this.pnlRough.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlRough.Controls.Add(this.label2);
 			this.pnlRough.Controls.Add(this.lblRough);
-			this.pnlRough.Location = new System.Drawing.Point(638, 36);
+			this.pnlRough.Location = new System.Drawing.Point(711, 36);
 			this.pnlRough.Name = "pnlRough";
 			this.pnlRough.Size = new System.Drawing.Size(150, 149);
 			this.pnlRough.TabIndex = 6;
@@ -166,7 +153,7 @@ namespace PtGui
 			this.lblRough.BackColor = System.Drawing.Color.Transparent;
 			this.lblRough.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblRough.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.lblRough.Location = new System.Drawing.Point(33, 59);
+			this.lblRough.Location = new System.Drawing.Point(33, 51);
 			this.lblRough.Name = "lblRough";
 			this.lblRough.Size = new System.Drawing.Size(84, 29);
 			this.lblRough.TabIndex = 0;
@@ -174,28 +161,47 @@ namespace PtGui
 			this.lblRough.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.lblRough.Click += new System.EventHandler(this.pnlRough_Click);
 			// 
-			// pnl1400kW
+			// lbl800kWb
 			// 
-			this.pnl1400kW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl1400kW.BackgroundImage")));
-			this.pnl1400kW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnl1400kW.Controls.Add(this.lbl1400kW);
-			this.pnl1400kW.Location = new System.Drawing.Point(826, 36);
-			this.pnl1400kW.Name = "pnl1400kW";
-			this.pnl1400kW.Size = new System.Drawing.Size(150, 149);
-			this.pnl1400kW.TabIndex = 7;
+			this.lbl800kWb.AutoSize = true;
+			this.lbl800kWb.BackColor = System.Drawing.Color.Transparent;
+			this.lbl800kWb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl800kWb.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.lbl800kWb.Location = new System.Drawing.Point(56, 90);
+			this.lbl800kWb.Name = "lbl800kWb";
+			this.lbl800kWb.Size = new System.Drawing.Size(40, 20);
+			this.lbl800kWb.TabIndex = 1;
+			this.lbl800kWb.Text = "0 - 2";
+			this.lbl800kWb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lbl800kWb.Click += new System.EventHandler(this.pnlCalm_Click);
 			// 
-			// lbl1400kW
+			// label1
 			// 
-			this.lbl1400kW.AutoSize = true;
-			this.lbl1400kW.BackColor = System.Drawing.Color.Transparent;
-			this.lbl1400kW.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl1400kW.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.lbl1400kW.Location = new System.Drawing.Point(26, 59);
-			this.lbl1400kW.Name = "lbl1400kW";
-			this.lbl1400kW.Size = new System.Drawing.Size(105, 29);
-			this.lbl1400kW.TabIndex = 0;
-			this.lbl1400kW.Text = "1400 kW";
-			this.lbl1400kW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.Transparent;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.label1.Location = new System.Drawing.Point(56, 90);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(40, 20);
+			this.label1.TabIndex = 2;
+			this.label1.Text = "3 - 5";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.label1.Click += new System.EventHandler(this.pnlAverage_Click);
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.Transparent;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.label2.Location = new System.Drawing.Point(55, 90);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(40, 20);
+			this.label2.TabIndex = 3;
+			this.label2.Text = "6 - 8";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.label2.Click += new System.EventHandler(this.pnlRough_Click);
 			// 
 			// frmSeaState
 			// 
@@ -203,7 +209,6 @@ namespace PtGui
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
 			this.ClientSize = new System.Drawing.Size(1280, 229);
-			this.Controls.Add(this.pnl1400kW);
 			this.Controls.Add(this.pnlRough);
 			this.Controls.Add(this.pnlAverage);
 			this.Controls.Add(this.pnlCalm);
@@ -218,8 +223,6 @@ namespace PtGui
 			this.pnlAverage.PerformLayout();
 			this.pnlRough.ResumeLayout(false);
 			this.pnlRough.PerformLayout();
-			this.pnl1400kW.ResumeLayout(false);
-			this.pnl1400kW.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -230,13 +233,13 @@ namespace PtGui
 		private System.Windows.Forms.Panel pnlCANCEL;
 		private System.Windows.Forms.Label lblCANCEL;
 		private System.Windows.Forms.Panel pnlCalm;
-		private System.Windows.Forms.Label lbl800kWb;
 		private System.Windows.Forms.Label lblCalm;
 		private System.Windows.Forms.Panel pnlAverage;
 		private System.Windows.Forms.Label lblAverage;
 		private System.Windows.Forms.Panel pnlRough;
 		private System.Windows.Forms.Label lblRough;
-		private System.Windows.Forms.Panel pnl1400kW;
-		private System.Windows.Forms.Label lbl1400kW;
-    }
+		private System.Windows.Forms.Label lbl800kWb;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label2;
+	}
 }
