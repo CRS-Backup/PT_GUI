@@ -125,6 +125,11 @@ namespace PtGui
         public const string BMP_VALVE4_OPENED = BMP_FOLDER + "valve4_open.bmp";
         public const string BMP_VALVE4_CLOSED = BMP_FOLDER + "valve4_closed.bmp";
 
+        public const string BMP_VALVE4_MON_OPENED = BMP_FOLDER + "valve4_open_mon.bmp";
+        public const string BMP_VALVE4_MON_CLOSED = BMP_FOLDER + "valve4_closed_mon.bmp";
+
+
+
         //Valve5
         public const string BMP_VALVE5_OPENED = BMP_FOLDER + "valve5_open.bmp";
         public const string BMP_VALVE5_CLOSED = BMP_FOLDER + "valve5_closed.bmp";
@@ -143,6 +148,10 @@ namespace PtGui
         public const string BMP_3WAYL2 = BMP_FOLDER + "3way_valve2_L.bmp";
         public const string BMP_3WAYL3 = BMP_FOLDER + "3way_valve3_L.bmp";
         public const string BMP_3WAYL4 = BMP_FOLDER + "3way_valve4_L.bmp";
+
+        //Boost pump
+        public const string PUMP_RUNNINGL= BMP_FOLDER + "boost_open.bmp";
+        public const string PUMP_STOPPEDL = BMP_FOLDER + "boost_closed.bmp";
 
     }
 }

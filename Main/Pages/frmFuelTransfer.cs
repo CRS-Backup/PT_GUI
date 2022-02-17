@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PtGui
 {
-	public partial class frmFuelTransfer: Form
+	public partial class frmFuelTransfer : Form
 
 	{
 		public frmFuelTransfer()
@@ -29,5 +29,111 @@ namespace PtGui
 		{
 			GuiCore.show_form("frmOutstationMenu", null);
 		}
+
+		private void pnlVlvOverflowIn_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV8", Constants.BMP_VALVE4_OPENED, Constants.BMP_VALVE4_CLOSED);
+			// LFRV8CS
+
+		}
+
+		private void pnlVlvOverflowOut_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV8A", Constants.BMP_VALVE3_OPENED, Constants.BMP_VALVE3_CLOSED);
+			// LFRV8CSA
+
+		}
+
+		private void pnlVlvTank1_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT1", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT1CS , LFRVT1OS
+
+		}
+
+		private void pnlVlvTank2_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT2", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT2CS , LFRVT2OS
+
+		}
+
+		private void pnlVlvTank3_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT3", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT3CS , LFRVT3OS
+		}
+
+		private void pnlVlvTank4_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT4", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT4CS , LFRVT4OS
+
+		}
+
+		private void pnlVlvTank5_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT5", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT5CS , LFRVT5OS
+
+		}
+
+		private void pnlVlvTank6_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT6", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT6CS , LFRVT6OS
+
+		}
+
+		private void pnlVlvTank7_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT7", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT7CS , LFRVT7OS
+
+		}
+
+		private void pnlVlvTank8_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT8", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT8CS , LFRVT8OS
+
+		}
+
+		private void pnlVlvTank9_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT9", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT9CS , LFRVT9OS
+
+		}
+
+		private void pnlVlvTank10_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIVT10", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRVT10CS , LFRVT10OS
+
+		}
+
+		private void pnlVlvService2_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV7", Constants.BMP_VALVE4_OPENED, Constants.BMP_VALVE4_CLOSED);
+			// LFRV7CS 
+		}
+
+		private void pnlVlvService1_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV6", Constants.BMP_VALVE4_OPENED, Constants.BMP_VALVE4_CLOSED);
+			// LFRV6CS 
+
+		}
+
+		private void pnlVlv1_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV5", Constants.BMP_VALVE3_OPENED, Constants.BMP_VALVE3_CLOSED);
+			// LFRV5CS 
+
+		}
 	}
 }
+
+	//SERVICE TANK 3 OPENED LFR105, CLOSED LFR106 - MONITORING ONLY
+

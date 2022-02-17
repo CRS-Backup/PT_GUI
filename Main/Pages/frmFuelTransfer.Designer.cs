@@ -37,66 +37,67 @@ namespace PtGui
 			this.PageBack = new System.Windows.Forms.PictureBox();
 			this.PageFwd = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.pnlVlvOverflow2Opn = new System.Windows.Forms.Panel();
-			this.pnlVlvTank10Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvTank9Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvTank8Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvTank7Clsd = new System.Windows.Forms.Panel();
+			this.pnlVlvOverflowOut = new System.Windows.Forms.Panel();
+			this.pnlVlvTank10 = new System.Windows.Forms.Panel();
+			this.pnlVlvTank9 = new System.Windows.Forms.Panel();
+			this.pnlVlvTank8 = new System.Windows.Forms.Panel();
+			this.pnlVlvTank7 = new System.Windows.Forms.Panel();
 			this.staticText24 = new System.Windows.Forms.Label();
 			this.staticText23 = new System.Windows.Forms.Label();
 			this.staticText22 = new System.Windows.Forms.Label();
 			this.staticText21 = new System.Windows.Forms.Label();
-			this.lblAftTk7Ana = new System.Windows.Forms.Label();
-			this.lblAftTk8Ana = new System.Windows.Forms.Label();
-			this.lblAftTk9Ana = new System.Windows.Forms.Label();
-			this.lblAftTk10Ana = new System.Windows.Forms.Label();
+			this.lblAftTk7Ana = new CRSControlsLib.CrsLabel();
+			this.lblAftTk8Ana = new CRSControlsLib.CrsLabel();
+			this.lblAftTk9Ana = new CRSControlsLib.CrsLabel();
+			this.lblAftTk10Ana = new CRSControlsLib.CrsLabel();
 			this.staticText20 = new System.Windows.Forms.Label();
-			this.lblFwdTk6Ana = new System.Windows.Forms.Label();
-			this.lblFwdTk5Ana = new System.Windows.Forms.Label();
-			this.lblFwdTk4Ana = new System.Windows.Forms.Label();
-			this.lblFwdTk3Ana = new System.Windows.Forms.Label();
-			this.lblFwdTk2Ana = new System.Windows.Forms.Label();
-			this.lblOverTk1Ana = new System.Windows.Forms.Label();
-			this.lblServTk3Ana = new System.Windows.Forms.Label();
-			this.lblServTk2Ana = new System.Windows.Forms.Label();
-			this.lblServTk1Ana = new System.Windows.Forms.Label();
-			this.lblFwdTk1Ana = new System.Windows.Forms.Label();
+			this.lblFwdTk6Ana = new CRSControlsLib.CrsLabel();
+			this.lblFwdTk5Ana = new CRSControlsLib.CrsLabel();
+			this.lblFwdTk4Ana = new CRSControlsLib.CrsLabel();
+			this.lblFwdTk3Ana = new CRSControlsLib.CrsLabel();
+			this.lblFwdTk2Ana = new CRSControlsLib.CrsLabel();
+			this.lblOverTk1Ana = new CRSControlsLib.CrsLabel();
+			this.lblServTk3Ana = new CRSControlsLib.CrsLabel();
+			this.lblServTk2Ana = new CRSControlsLib.CrsLabel();
+			this.lblServTk1Ana = new CRSControlsLib.CrsLabel();
+			this.lblFwdTk1Ana = new CRSControlsLib.CrsLabel();
 			this.staticText19 = new System.Windows.Forms.Label();
 			this.staticText18 = new System.Windows.Forms.Label();
 			this.staticText17 = new System.Windows.Forms.Label();
 			this.staticText16 = new System.Windows.Forms.Label();
-			this.pnlVlv2Clsd = new System.Windows.Forms.Panel();
-			this.pnlCRed = new System.Windows.Forms.Panel();
-			this.pnlCGreen = new System.Windows.Forms.Panel();
-			this.pnlPump1Green = new System.Windows.Forms.Panel();
+			this.pnlVlv2 = new System.Windows.Forms.Panel();
+			this.pnlCoalescer2 = new System.Windows.Forms.Panel();
+			this.pnlCoalescer1 = new System.Windows.Forms.Panel();
+			this.pnlPump1 = new System.Windows.Forms.Panel();
 			this.staticText15 = new System.Windows.Forms.Label();
 			this.staticText14 = new System.Windows.Forms.Label();
 			this.staticText13 = new System.Windows.Forms.Label();
 			this.pnlVlvPumpClsd = new System.Windows.Forms.Panel();
-			this.pnlPump2Red = new System.Windows.Forms.Panel();
+			this.pnlPump2 = new System.Windows.Forms.Panel();
 			this.staticText12 = new System.Windows.Forms.Label();
 			this.staticText11 = new System.Windows.Forms.Label();
 			this.staticText10 = new System.Windows.Forms.Label();
 			this.staticText9 = new System.Windows.Forms.Label();
 			this.staticText8 = new System.Windows.Forms.Label();
 			this.staticText7 = new System.Windows.Forms.Label();
-			this.pnlVlvTank6Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvTank5Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvTank4Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvTank3Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvTank2Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvTank1Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlv1Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvService1Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvService2Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvService3Clsd = new System.Windows.Forms.Panel();
-			this.pnlVlvOverflow1Opn = new System.Windows.Forms.Panel();
+			this.pnlVlvTank6 = new System.Windows.Forms.Panel();
+			this.pnlVlvTank5 = new System.Windows.Forms.Panel();
+			this.pnlVlvTank4 = new System.Windows.Forms.Panel();
+			this.pnlVlvTank3 = new System.Windows.Forms.Panel();
+			this.pnlVlvTank2 = new System.Windows.Forms.Panel();
+			this.pnlVlvTank1 = new System.Windows.Forms.Panel();
+			this.pnlVlv1 = new System.Windows.Forms.Panel();
+			this.pnlVlvService1 = new System.Windows.Forms.Panel();
+			this.pnlVlvService2 = new System.Windows.Forms.Panel();
+			this.pnlVlvService3 = new System.Windows.Forms.Panel();
+			this.pnlVlvOverflowIn = new System.Windows.Forms.Panel();
 			this.staticText6 = new System.Windows.Forms.Label();
 			this.staticText5 = new System.Windows.Forms.Label();
 			this.staticText4 = new System.Windows.Forms.Label();
 			this.staticText3 = new System.Windows.Forms.Label();
 			this.staticText2 = new System.Windows.Forms.Label();
 			this.staticText1 = new System.Windows.Forms.Label();
+			this.pnlVlv3 = new System.Windows.Forms.Panel();
 			this.pnlPanelTest.SuspendLayout();
 			this.pnlTop.SuspendLayout();
 			this.pnlTopInner.SuspendLayout();
@@ -108,13 +109,14 @@ namespace PtGui
 			// 
 			this.pnlPanelTest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPanelTest.BackgroundImage")));
 			this.pnlPanelTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pnlPanelTest.Controls.Add(this.pnlVlv3);
 			this.pnlPanelTest.Controls.Add(this.pnlTop);
 			this.pnlPanelTest.Controls.Add(this.panel1);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvOverflow2Opn);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank10Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank9Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank8Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank7Clsd);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvOverflowOut);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank10);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank9);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank8);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank7);
 			this.pnlPanelTest.Controls.Add(this.staticText24);
 			this.pnlPanelTest.Controls.Add(this.staticText23);
 			this.pnlPanelTest.Controls.Add(this.staticText22);
@@ -138,32 +140,32 @@ namespace PtGui
 			this.pnlPanelTest.Controls.Add(this.staticText18);
 			this.pnlPanelTest.Controls.Add(this.staticText17);
 			this.pnlPanelTest.Controls.Add(this.staticText16);
-			this.pnlPanelTest.Controls.Add(this.pnlVlv2Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlCRed);
-			this.pnlPanelTest.Controls.Add(this.pnlCGreen);
-			this.pnlPanelTest.Controls.Add(this.pnlPump1Green);
+			this.pnlPanelTest.Controls.Add(this.pnlVlv2);
+			this.pnlPanelTest.Controls.Add(this.pnlCoalescer2);
+			this.pnlPanelTest.Controls.Add(this.pnlCoalescer1);
+			this.pnlPanelTest.Controls.Add(this.pnlPump1);
 			this.pnlPanelTest.Controls.Add(this.staticText15);
 			this.pnlPanelTest.Controls.Add(this.staticText14);
 			this.pnlPanelTest.Controls.Add(this.staticText13);
 			this.pnlPanelTest.Controls.Add(this.pnlVlvPumpClsd);
-			this.pnlPanelTest.Controls.Add(this.pnlPump2Red);
+			this.pnlPanelTest.Controls.Add(this.pnlPump2);
 			this.pnlPanelTest.Controls.Add(this.staticText12);
 			this.pnlPanelTest.Controls.Add(this.staticText11);
 			this.pnlPanelTest.Controls.Add(this.staticText10);
 			this.pnlPanelTest.Controls.Add(this.staticText9);
 			this.pnlPanelTest.Controls.Add(this.staticText8);
 			this.pnlPanelTest.Controls.Add(this.staticText7);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank6Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank5Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank4Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank3Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank2Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvTank1Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlv1Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvService1Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvService2Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvService3Clsd);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvOverflow1Opn);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank6);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank5);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank4);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank3);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank2);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvTank1);
+			this.pnlPanelTest.Controls.Add(this.pnlVlv1);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvService1);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvService2);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvService3);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvOverflowIn);
 			this.pnlPanelTest.Controls.Add(this.staticText6);
 			this.pnlPanelTest.Controls.Add(this.staticText5);
 			this.pnlPanelTest.Controls.Add(this.staticText4);
@@ -250,47 +252,52 @@ namespace PtGui
 			this.panel1.Size = new System.Drawing.Size(33, 58);
 			this.panel1.TabIndex = 88;
 			// 
-			// pnlVlvOverflow2Opn
+			// pnlVlvOverflowOut
 			// 
-			this.pnlVlvOverflow2Opn.BackColor = System.Drawing.Color.Transparent;
-			this.pnlVlvOverflow2Opn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvOverflow2Opn.BackgroundImage")));
-			this.pnlVlvOverflow2Opn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVlvOverflow2Opn.Location = new System.Drawing.Point(248, 522);
-			this.pnlVlvOverflow2Opn.Name = "pnlVlvOverflow2Opn";
-			this.pnlVlvOverflow2Opn.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvOverflow2Opn.TabIndex = 48;
+			this.pnlVlvOverflowOut.BackColor = System.Drawing.Color.Transparent;
+			this.pnlVlvOverflowOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvOverflowOut.BackgroundImage")));
+			this.pnlVlvOverflowOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlVlvOverflowOut.Location = new System.Drawing.Point(248, 522);
+			this.pnlVlvOverflowOut.Name = "pnlVlvOverflowOut";
+			this.pnlVlvOverflowOut.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvOverflowOut.TabIndex = 48;
+			this.pnlVlvOverflowOut.Click += new System.EventHandler(this.pnlVlvOverflowOut_Click);
 			// 
-			// pnlVlvTank10Clsd
+			// pnlVlvTank10
 			// 
-			this.pnlVlvTank10Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank10Clsd.BackgroundImage")));
-			this.pnlVlvTank10Clsd.Location = new System.Drawing.Point(155, 680);
-			this.pnlVlvTank10Clsd.Name = "pnlVlvTank10Clsd";
-			this.pnlVlvTank10Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank10Clsd.TabIndex = 87;
+			this.pnlVlvTank10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank10.BackgroundImage")));
+			this.pnlVlvTank10.Location = new System.Drawing.Point(155, 680);
+			this.pnlVlvTank10.Name = "pnlVlvTank10";
+			this.pnlVlvTank10.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank10.TabIndex = 87;
+			this.pnlVlvTank10.Click += new System.EventHandler(this.pnlVlvTank10_Click);
 			// 
-			// pnlVlvTank9Clsd
+			// pnlVlvTank9
 			// 
-			this.pnlVlvTank9Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank9Clsd.BackgroundImage")));
-			this.pnlVlvTank9Clsd.Location = new System.Drawing.Point(155, 616);
-			this.pnlVlvTank9Clsd.Name = "pnlVlvTank9Clsd";
-			this.pnlVlvTank9Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank9Clsd.TabIndex = 86;
+			this.pnlVlvTank9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank9.BackgroundImage")));
+			this.pnlVlvTank9.Location = new System.Drawing.Point(155, 616);
+			this.pnlVlvTank9.Name = "pnlVlvTank9";
+			this.pnlVlvTank9.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank9.TabIndex = 86;
+			this.pnlVlvTank9.Click += new System.EventHandler(this.pnlVlvTank9_Click);
 			// 
-			// pnlVlvTank8Clsd
+			// pnlVlvTank8
 			// 
-			this.pnlVlvTank8Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank8Clsd.BackgroundImage")));
-			this.pnlVlvTank8Clsd.Location = new System.Drawing.Point(155, 552);
-			this.pnlVlvTank8Clsd.Name = "pnlVlvTank8Clsd";
-			this.pnlVlvTank8Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank8Clsd.TabIndex = 49;
+			this.pnlVlvTank8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank8.BackgroundImage")));
+			this.pnlVlvTank8.Location = new System.Drawing.Point(155, 552);
+			this.pnlVlvTank8.Name = "pnlVlvTank8";
+			this.pnlVlvTank8.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank8.TabIndex = 49;
+			this.pnlVlvTank8.Click += new System.EventHandler(this.pnlVlvTank8_Click);
 			// 
-			// pnlVlvTank7Clsd
+			// pnlVlvTank7
 			// 
-			this.pnlVlvTank7Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank7Clsd.BackgroundImage")));
-			this.pnlVlvTank7Clsd.Location = new System.Drawing.Point(155, 488);
-			this.pnlVlvTank7Clsd.Name = "pnlVlvTank7Clsd";
-			this.pnlVlvTank7Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank7Clsd.TabIndex = 48;
+			this.pnlVlvTank7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank7.BackgroundImage")));
+			this.pnlVlvTank7.Location = new System.Drawing.Point(155, 488);
+			this.pnlVlvTank7.Name = "pnlVlvTank7";
+			this.pnlVlvTank7.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank7.TabIndex = 48;
+			this.pnlVlvTank7.Click += new System.EventHandler(this.pnlVlvTank7_Click);
 			// 
 			// staticText24
 			// 
@@ -352,6 +359,8 @@ namespace PtGui
 			// 
 			this.lblAftTk7Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblAftTk7Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblAftTk7Ana.CrsChanNumOrAlias = "RFRLSTO7";
+			this.lblAftTk7Ana.CrsChanValue = null;
 			this.lblAftTk7Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblAftTk7Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblAftTk7Ana.Location = new System.Drawing.Point(31, 511);
@@ -365,6 +374,8 @@ namespace PtGui
 			// 
 			this.lblAftTk8Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblAftTk8Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblAftTk8Ana.CrsChanNumOrAlias = "RFRLSTO8";
+			this.lblAftTk8Ana.CrsChanValue = null;
 			this.lblAftTk8Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblAftTk8Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblAftTk8Ana.Location = new System.Drawing.Point(31, 575);
@@ -378,6 +389,8 @@ namespace PtGui
 			// 
 			this.lblAftTk9Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblAftTk9Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblAftTk9Ana.CrsChanNumOrAlias = "RFRLSTO9";
+			this.lblAftTk9Ana.CrsChanValue = null;
 			this.lblAftTk9Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblAftTk9Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblAftTk9Ana.Location = new System.Drawing.Point(31, 639);
@@ -391,6 +404,8 @@ namespace PtGui
 			// 
 			this.lblAftTk10Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblAftTk10Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblAftTk10Ana.CrsChanNumOrAlias = "RFRLSTO0";
+			this.lblAftTk10Ana.CrsChanValue = null;
 			this.lblAftTk10Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblAftTk10Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblAftTk10Ana.Location = new System.Drawing.Point(31, 703);
@@ -417,6 +432,8 @@ namespace PtGui
 			// 
 			this.lblFwdTk6Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblFwdTk6Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblFwdTk6Ana.CrsChanNumOrAlias = "RFRLSTO6";
+			this.lblFwdTk6Ana.CrsChanValue = null;
 			this.lblFwdTk6Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblFwdTk6Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblFwdTk6Ana.Location = new System.Drawing.Point(1135, 725);
@@ -430,6 +447,8 @@ namespace PtGui
 			// 
 			this.lblFwdTk5Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblFwdTk5Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblFwdTk5Ana.CrsChanNumOrAlias = "RFRLSTO5";
+			this.lblFwdTk5Ana.CrsChanValue = null;
 			this.lblFwdTk5Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblFwdTk5Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblFwdTk5Ana.Location = new System.Drawing.Point(1135, 661);
@@ -443,6 +462,8 @@ namespace PtGui
 			// 
 			this.lblFwdTk4Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblFwdTk4Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblFwdTk4Ana.CrsChanNumOrAlias = "RFRLSTO4";
+			this.lblFwdTk4Ana.CrsChanValue = null;
 			this.lblFwdTk4Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblFwdTk4Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblFwdTk4Ana.Location = new System.Drawing.Point(1135, 597);
@@ -456,6 +477,8 @@ namespace PtGui
 			// 
 			this.lblFwdTk3Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblFwdTk3Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblFwdTk3Ana.CrsChanNumOrAlias = "RFRLSTO3";
+			this.lblFwdTk3Ana.CrsChanValue = null;
 			this.lblFwdTk3Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblFwdTk3Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblFwdTk3Ana.Location = new System.Drawing.Point(1135, 533);
@@ -469,6 +492,8 @@ namespace PtGui
 			// 
 			this.lblFwdTk2Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblFwdTk2Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblFwdTk2Ana.CrsChanNumOrAlias = "RFRLSTO2";
+			this.lblFwdTk2Ana.CrsChanValue = null;
 			this.lblFwdTk2Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblFwdTk2Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblFwdTk2Ana.Location = new System.Drawing.Point(1135, 469);
@@ -482,6 +507,8 @@ namespace PtGui
 			// 
 			this.lblOverTk1Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblOverTk1Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblOverTk1Ana.CrsChanNumOrAlias = null;
+			this.lblOverTk1Ana.CrsChanValue = null;
 			this.lblOverTk1Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblOverTk1Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblOverTk1Ana.Location = new System.Drawing.Point(213, 473);
@@ -495,6 +522,8 @@ namespace PtGui
 			// 
 			this.lblServTk3Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblServTk3Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblServTk3Ana.CrsChanNumOrAlias = null;
+			this.lblServTk3Ana.CrsChanValue = null;
 			this.lblServTk3Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblServTk3Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblServTk3Ana.Location = new System.Drawing.Point(346, 473);
@@ -508,6 +537,8 @@ namespace PtGui
 			// 
 			this.lblServTk2Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblServTk2Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblServTk2Ana.CrsChanNumOrAlias = null;
+			this.lblServTk2Ana.CrsChanValue = null;
 			this.lblServTk2Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblServTk2Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblServTk2Ana.Location = new System.Drawing.Point(491, 473);
@@ -521,6 +552,8 @@ namespace PtGui
 			// 
 			this.lblServTk1Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblServTk1Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblServTk1Ana.CrsChanNumOrAlias = null;
+			this.lblServTk1Ana.CrsChanValue = null;
 			this.lblServTk1Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblServTk1Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblServTk1Ana.Location = new System.Drawing.Point(634, 473);
@@ -534,6 +567,8 @@ namespace PtGui
 			// 
 			this.lblFwdTk1Ana.BackColor = System.Drawing.Color.Silver;
 			this.lblFwdTk1Ana.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblFwdTk1Ana.CrsChanNumOrAlias = "RFRLSTO1";
+			this.lblFwdTk1Ana.CrsChanValue = null;
 			this.lblFwdTk1Ana.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblFwdTk1Ana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.lblFwdTk1Ana.Location = new System.Drawing.Point(1135, 405);
@@ -599,42 +634,42 @@ namespace PtGui
 			this.staticText16.Text = "OVERFLOW TANK";
 			this.staticText16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlVlv2Clsd
+			// pnlVlv2
 			// 
-			this.pnlVlv2Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv2Clsd.BackgroundImage")));
-			this.pnlVlv2Clsd.Location = new System.Drawing.Point(689, 662);
-			this.pnlVlv2Clsd.Name = "pnlVlv2Clsd";
-			this.pnlVlv2Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlv2Clsd.TabIndex = 48;
+			this.pnlVlv2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv2.BackgroundImage")));
+			this.pnlVlv2.Location = new System.Drawing.Point(689, 662);
+			this.pnlVlv2.Name = "pnlVlv2";
+			this.pnlVlv2.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlv2.TabIndex = 48;
 			// 
-			// pnlCRed
+			// pnlCoalescer2
 			// 
-			this.pnlCRed.BackColor = System.Drawing.Color.Transparent;
-			this.pnlCRed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCRed.BackgroundImage")));
-			this.pnlCRed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlCRed.Location = new System.Drawing.Point(864, 448);
-			this.pnlCRed.Name = "pnlCRed";
-			this.pnlCRed.Size = new System.Drawing.Size(25, 27);
-			this.pnlCRed.TabIndex = 62;
+			this.pnlCoalescer2.BackColor = System.Drawing.Color.Transparent;
+			this.pnlCoalescer2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCoalescer2.BackgroundImage")));
+			this.pnlCoalescer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlCoalescer2.Location = new System.Drawing.Point(864, 448);
+			this.pnlCoalescer2.Name = "pnlCoalescer2";
+			this.pnlCoalescer2.Size = new System.Drawing.Size(25, 27);
+			this.pnlCoalescer2.TabIndex = 62;
 			// 
-			// pnlCGreen
+			// pnlCoalescer1
 			// 
-			this.pnlCGreen.BackColor = System.Drawing.Color.Transparent;
-			this.pnlCGreen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCGreen.BackgroundImage")));
-			this.pnlCGreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlCGreen.Location = new System.Drawing.Point(606, 662);
-			this.pnlCGreen.Name = "pnlCGreen";
-			this.pnlCGreen.Size = new System.Drawing.Size(25, 27);
-			this.pnlCGreen.TabIndex = 61;
+			this.pnlCoalescer1.BackColor = System.Drawing.Color.Transparent;
+			this.pnlCoalescer1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCoalescer1.BackgroundImage")));
+			this.pnlCoalescer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlCoalescer1.Location = new System.Drawing.Point(606, 662);
+			this.pnlCoalescer1.Name = "pnlCoalescer1";
+			this.pnlCoalescer1.Size = new System.Drawing.Size(25, 27);
+			this.pnlCoalescer1.TabIndex = 61;
 			// 
-			// pnlPump1Green
+			// pnlPump1
 			// 
-			this.pnlPump1Green.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump1Green.BackgroundImage")));
-			this.pnlPump1Green.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlPump1Green.Location = new System.Drawing.Point(293, 635);
-			this.pnlPump1Green.Name = "pnlPump1Green";
-			this.pnlPump1Green.Size = new System.Drawing.Size(84, 84);
-			this.pnlPump1Green.TabIndex = 60;
+			this.pnlPump1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump1.BackgroundImage")));
+			this.pnlPump1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlPump1.Location = new System.Drawing.Point(293, 635);
+			this.pnlPump1.Name = "pnlPump1";
+			this.pnlPump1.Size = new System.Drawing.Size(84, 84);
+			this.pnlPump1.TabIndex = 60;
 			// 
 			// staticText15
 			// 
@@ -684,14 +719,14 @@ namespace PtGui
 			this.pnlVlvPumpClsd.Size = new System.Drawing.Size(58, 33);
 			this.pnlVlvPumpClsd.TabIndex = 45;
 			// 
-			// pnlPump2Red
+			// pnlPump2
 			// 
-			this.pnlPump2Red.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump2Red.BackgroundImage")));
-			this.pnlPump2Red.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlPump2Red.Location = new System.Drawing.Point(913, 494);
-			this.pnlPump2Red.Name = "pnlPump2Red";
-			this.pnlPump2Red.Size = new System.Drawing.Size(84, 84);
-			this.pnlPump2Red.TabIndex = 47;
+			this.pnlPump2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump2.BackgroundImage")));
+			this.pnlPump2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlPump2.Location = new System.Drawing.Point(913, 494);
+			this.pnlPump2.Name = "pnlPump2";
+			this.pnlPump2.Size = new System.Drawing.Size(84, 84);
+			this.pnlPump2.TabIndex = 47;
 			// 
 			// staticText12
 			// 
@@ -777,93 +812,103 @@ namespace PtGui
 			this.staticText7.Text = "1";
 			this.staticText7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlVlvTank6Clsd
+			// pnlVlvTank6
 			// 
-			this.pnlVlvTank6Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank6Clsd.BackgroundImage")));
-			this.pnlVlvTank6Clsd.Location = new System.Drawing.Point(1082, 701);
-			this.pnlVlvTank6Clsd.Name = "pnlVlvTank6Clsd";
-			this.pnlVlvTank6Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank6Clsd.TabIndex = 50;
+			this.pnlVlvTank6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank6.BackgroundImage")));
+			this.pnlVlvTank6.Location = new System.Drawing.Point(1082, 701);
+			this.pnlVlvTank6.Name = "pnlVlvTank6";
+			this.pnlVlvTank6.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank6.TabIndex = 50;
+			this.pnlVlvTank6.Click += new System.EventHandler(this.pnlVlvTank6_Click);
 			// 
-			// pnlVlvTank5Clsd
+			// pnlVlvTank5
 			// 
-			this.pnlVlvTank5Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank5Clsd.BackgroundImage")));
-			this.pnlVlvTank5Clsd.Location = new System.Drawing.Point(1082, 637);
-			this.pnlVlvTank5Clsd.Name = "pnlVlvTank5Clsd";
-			this.pnlVlvTank5Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank5Clsd.TabIndex = 50;
+			this.pnlVlvTank5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank5.BackgroundImage")));
+			this.pnlVlvTank5.Location = new System.Drawing.Point(1082, 637);
+			this.pnlVlvTank5.Name = "pnlVlvTank5";
+			this.pnlVlvTank5.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank5.TabIndex = 50;
+			this.pnlVlvTank5.Click += new System.EventHandler(this.pnlVlvTank5_Click);
 			// 
-			// pnlVlvTank4Clsd
+			// pnlVlvTank4
 			// 
-			this.pnlVlvTank4Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank4Clsd.BackgroundImage")));
-			this.pnlVlvTank4Clsd.Location = new System.Drawing.Point(1082, 572);
-			this.pnlVlvTank4Clsd.Name = "pnlVlvTank4Clsd";
-			this.pnlVlvTank4Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank4Clsd.TabIndex = 50;
+			this.pnlVlvTank4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank4.BackgroundImage")));
+			this.pnlVlvTank4.Location = new System.Drawing.Point(1082, 572);
+			this.pnlVlvTank4.Name = "pnlVlvTank4";
+			this.pnlVlvTank4.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank4.TabIndex = 50;
+			this.pnlVlvTank4.Click += new System.EventHandler(this.pnlVlvTank4_Click);
 			// 
-			// pnlVlvTank3Clsd
+			// pnlVlvTank3
 			// 
-			this.pnlVlvTank3Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank3Clsd.BackgroundImage")));
-			this.pnlVlvTank3Clsd.Location = new System.Drawing.Point(1082, 509);
-			this.pnlVlvTank3Clsd.Name = "pnlVlvTank3Clsd";
-			this.pnlVlvTank3Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank3Clsd.TabIndex = 49;
+			this.pnlVlvTank3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank3.BackgroundImage")));
+			this.pnlVlvTank3.Location = new System.Drawing.Point(1082, 509);
+			this.pnlVlvTank3.Name = "pnlVlvTank3";
+			this.pnlVlvTank3.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank3.TabIndex = 49;
+			this.pnlVlvTank3.Click += new System.EventHandler(this.pnlVlvTank3_Click);
 			// 
-			// pnlVlvTank2Clsd
+			// pnlVlvTank2
 			// 
-			this.pnlVlvTank2Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank2Clsd.BackgroundImage")));
-			this.pnlVlvTank2Clsd.Location = new System.Drawing.Point(1082, 444);
-			this.pnlVlvTank2Clsd.Name = "pnlVlvTank2Clsd";
-			this.pnlVlvTank2Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank2Clsd.TabIndex = 48;
+			this.pnlVlvTank2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank2.BackgroundImage")));
+			this.pnlVlvTank2.Location = new System.Drawing.Point(1082, 444);
+			this.pnlVlvTank2.Name = "pnlVlvTank2";
+			this.pnlVlvTank2.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank2.TabIndex = 48;
+			this.pnlVlvTank2.Click += new System.EventHandler(this.pnlVlvTank2_Click);
 			// 
-			// pnlVlvTank1Clsd
+			// pnlVlvTank1
 			// 
-			this.pnlVlvTank1Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank1Clsd.BackgroundImage")));
-			this.pnlVlvTank1Clsd.Location = new System.Drawing.Point(1082, 380);
-			this.pnlVlvTank1Clsd.Name = "pnlVlvTank1Clsd";
-			this.pnlVlvTank1Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlvTank1Clsd.TabIndex = 47;
+			this.pnlVlvTank1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvTank1.BackgroundImage")));
+			this.pnlVlvTank1.Location = new System.Drawing.Point(1082, 380);
+			this.pnlVlvTank1.Name = "pnlVlvTank1";
+			this.pnlVlvTank1.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlvTank1.TabIndex = 47;
+			this.pnlVlvTank1.Click += new System.EventHandler(this.pnlVlvTank1_Click);
 			// 
-			// pnlVlv1Clsd
+			// pnlVlv1
 			// 
-			this.pnlVlv1Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv1Clsd.BackgroundImage")));
-			this.pnlVlv1Clsd.Location = new System.Drawing.Point(860, 302);
-			this.pnlVlv1Clsd.Name = "pnlVlv1Clsd";
-			this.pnlVlv1Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlv1Clsd.TabIndex = 46;
+			this.pnlVlv1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv1.BackgroundImage")));
+			this.pnlVlv1.Location = new System.Drawing.Point(860, 302);
+			this.pnlVlv1.Name = "pnlVlv1";
+			this.pnlVlv1.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlv1.TabIndex = 46;
+			this.pnlVlv1.Click += new System.EventHandler(this.pnlVlv1_Click);
 			// 
-			// pnlVlvService1Clsd
+			// pnlVlvService1
 			// 
-			this.pnlVlvService1Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvService1Clsd.BackgroundImage")));
-			this.pnlVlvService1Clsd.Location = new System.Drawing.Point(677, 314);
-			this.pnlVlvService1Clsd.Name = "pnlVlvService1Clsd";
-			this.pnlVlvService1Clsd.Size = new System.Drawing.Size(58, 33);
-			this.pnlVlvService1Clsd.TabIndex = 45;
+			this.pnlVlvService1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvService1.BackgroundImage")));
+			this.pnlVlvService1.Location = new System.Drawing.Point(677, 314);
+			this.pnlVlvService1.Name = "pnlVlvService1";
+			this.pnlVlvService1.Size = new System.Drawing.Size(58, 33);
+			this.pnlVlvService1.TabIndex = 45;
+			this.pnlVlvService1.Click += new System.EventHandler(this.pnlVlvService1_Click);
 			// 
-			// pnlVlvService2Clsd
+			// pnlVlvService2
 			// 
-			this.pnlVlvService2Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvService2Clsd.BackgroundImage")));
-			this.pnlVlvService2Clsd.Location = new System.Drawing.Point(531, 314);
-			this.pnlVlvService2Clsd.Name = "pnlVlvService2Clsd";
-			this.pnlVlvService2Clsd.Size = new System.Drawing.Size(58, 33);
-			this.pnlVlvService2Clsd.TabIndex = 44;
+			this.pnlVlvService2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvService2.BackgroundImage")));
+			this.pnlVlvService2.Location = new System.Drawing.Point(531, 314);
+			this.pnlVlvService2.Name = "pnlVlvService2";
+			this.pnlVlvService2.Size = new System.Drawing.Size(58, 33);
+			this.pnlVlvService2.TabIndex = 44;
+			this.pnlVlvService2.Click += new System.EventHandler(this.pnlVlvService2_Click);
 			// 
-			// pnlVlvService3Clsd
+			// pnlVlvService3
 			// 
-			this.pnlVlvService3Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvService3Clsd.BackgroundImage")));
-			this.pnlVlvService3Clsd.Location = new System.Drawing.Point(386, 314);
-			this.pnlVlvService3Clsd.Name = "pnlVlvService3Clsd";
-			this.pnlVlvService3Clsd.Size = new System.Drawing.Size(58, 33);
-			this.pnlVlvService3Clsd.TabIndex = 43;
+			this.pnlVlvService3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvService3.BackgroundImage")));
+			this.pnlVlvService3.Location = new System.Drawing.Point(386, 314);
+			this.pnlVlvService3.Name = "pnlVlvService3";
+			this.pnlVlvService3.Size = new System.Drawing.Size(58, 33);
+			this.pnlVlvService3.TabIndex = 43;
 			// 
-			// pnlVlvOverflow1Opn
+			// pnlVlvOverflowIn
 			// 
-			this.pnlVlvOverflow1Opn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvOverflow1Opn.BackgroundImage")));
-			this.pnlVlvOverflow1Opn.Location = new System.Drawing.Point(249, 314);
-			this.pnlVlvOverflow1Opn.Name = "pnlVlvOverflow1Opn";
-			this.pnlVlvOverflow1Opn.Size = new System.Drawing.Size(58, 33);
-			this.pnlVlvOverflow1Opn.TabIndex = 42;
+			this.pnlVlvOverflowIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvOverflowIn.BackgroundImage")));
+			this.pnlVlvOverflowIn.Location = new System.Drawing.Point(249, 314);
+			this.pnlVlvOverflowIn.Name = "pnlVlvOverflowIn";
+			this.pnlVlvOverflowIn.Size = new System.Drawing.Size(58, 33);
+			this.pnlVlvOverflowIn.TabIndex = 42;
+			this.pnlVlvOverflowIn.Click += new System.EventHandler(this.pnlVlvOverflowIn_Click);
 			// 
 			// staticText6
 			// 
@@ -943,6 +988,16 @@ namespace PtGui
 			this.staticText1.Text = "AFT DECK CONNS";
 			this.staticText1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
+			// pnlVlv3
+			// 
+			this.pnlVlv3.BackColor = System.Drawing.Color.Transparent;
+			this.pnlVlv3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv3.BackgroundImage")));
+			this.pnlVlv3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlVlv3.Location = new System.Drawing.Point(462, 626);
+			this.pnlVlv3.Name = "pnlVlv3";
+			this.pnlVlv3.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlv3.TabIndex = 90;
+			// 
 			// frmFuelTransfer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -967,61 +1022,47 @@ namespace PtGui
 		#endregion
 		private System.Windows.Forms.Panel pnlPanelTest;
 		private System.Windows.Forms.Label staticText1;
-		private System.Windows.Forms.Panel pnlVlvService2Clsd;
-		private System.Windows.Forms.Panel pnlVlvService3Clsd;
-		private System.Windows.Forms.Panel pnlVlvOverflow1Opn;
+		private System.Windows.Forms.Panel pnlVlvService2;
+		private System.Windows.Forms.Panel pnlVlvService3;
+		private System.Windows.Forms.Panel pnlVlvOverflowIn;
 		private System.Windows.Forms.Label staticText6;
 		private System.Windows.Forms.Label staticText5;
 		private System.Windows.Forms.Label staticText4;
 		private System.Windows.Forms.Label staticText3;
 		private System.Windows.Forms.Label staticText2;
-		private System.Windows.Forms.Panel pnlVlvService1Clsd;
+		private System.Windows.Forms.Panel pnlVlvService1;
 		private System.Windows.Forms.Label staticText12;
 		private System.Windows.Forms.Label staticText11;
 		private System.Windows.Forms.Label staticText10;
 		private System.Windows.Forms.Label staticText9;
 		private System.Windows.Forms.Label staticText8;
 		private System.Windows.Forms.Label staticText7;
-		private System.Windows.Forms.Panel pnlVlvTank6Clsd;
-		private System.Windows.Forms.Panel pnlVlvTank5Clsd;
-		private System.Windows.Forms.Panel pnlVlvTank4Clsd;
-		private System.Windows.Forms.Panel pnlVlvTank3Clsd;
-		private System.Windows.Forms.Panel pnlVlvTank2Clsd;
-		private System.Windows.Forms.Panel pnlVlvTank1Clsd;
-		private System.Windows.Forms.Panel pnlVlv1Clsd;
-		private System.Windows.Forms.Panel pnlPump2Red;
-		private System.Windows.Forms.Panel pnlPump1Green;
+		private System.Windows.Forms.Panel pnlVlvTank6;
+		private System.Windows.Forms.Panel pnlVlvTank5;
+		private System.Windows.Forms.Panel pnlVlvTank4;
+		private System.Windows.Forms.Panel pnlVlvTank3;
+		private System.Windows.Forms.Panel pnlVlvTank2;
+		private System.Windows.Forms.Panel pnlVlvTank1;
+		private System.Windows.Forms.Panel pnlVlv1;
+		private System.Windows.Forms.Panel pnlPump2;
+		private System.Windows.Forms.Panel pnlPump1;
 		private System.Windows.Forms.Label staticText15;
 		private System.Windows.Forms.Label staticText14;
 		private System.Windows.Forms.Label staticText13;
 		private System.Windows.Forms.Panel pnlVlvPumpClsd;
 		private System.Windows.Forms.Label staticText16;
-		private System.Windows.Forms.Panel pnlVlv2Clsd;
-		private System.Windows.Forms.Panel pnlCRed;
-		private System.Windows.Forms.Panel pnlCGreen;
+		private System.Windows.Forms.Panel pnlVlv2;
+		private System.Windows.Forms.Panel pnlCoalescer2;
+		private System.Windows.Forms.Panel pnlCoalescer1;
 		private System.Windows.Forms.Label staticText19;
 		private System.Windows.Forms.Label staticText18;
 		private System.Windows.Forms.Label staticText17;
-		private System.Windows.Forms.Label lblServTk1Ana;
-		private System.Windows.Forms.Label lblFwdTk1Ana;
-		private System.Windows.Forms.Label lblFwdTk6Ana;
-		private System.Windows.Forms.Label lblFwdTk5Ana;
-		private System.Windows.Forms.Label lblFwdTk4Ana;
-		private System.Windows.Forms.Label lblFwdTk3Ana;
-		private System.Windows.Forms.Label lblFwdTk2Ana;
-		private System.Windows.Forms.Label lblOverTk1Ana;
-		private System.Windows.Forms.Label lblServTk3Ana;
-		private System.Windows.Forms.Label lblServTk2Ana;
-		private System.Windows.Forms.Label lblAftTk7Ana;
-		private System.Windows.Forms.Label lblAftTk8Ana;
-		private System.Windows.Forms.Label lblAftTk9Ana;
-		private System.Windows.Forms.Label lblAftTk10Ana;
 		private System.Windows.Forms.Label staticText20;
-		private System.Windows.Forms.Panel pnlVlvOverflow2Opn;
-		private System.Windows.Forms.Panel pnlVlvTank10Clsd;
-		private System.Windows.Forms.Panel pnlVlvTank9Clsd;
-		private System.Windows.Forms.Panel pnlVlvTank8Clsd;
-		private System.Windows.Forms.Panel pnlVlvTank7Clsd;
+		private System.Windows.Forms.Panel pnlVlvOverflowOut;
+		private System.Windows.Forms.Panel pnlVlvTank10;
+		private System.Windows.Forms.Panel pnlVlvTank9;
+		private System.Windows.Forms.Panel pnlVlvTank8;
+		private System.Windows.Forms.Panel pnlVlvTank7;
 		private System.Windows.Forms.Label staticText24;
 		private System.Windows.Forms.Label staticText23;
 		private System.Windows.Forms.Label staticText22;
@@ -1032,5 +1073,20 @@ namespace PtGui
 		private System.Windows.Forms.Label lblPageName;
 		private System.Windows.Forms.PictureBox PageBack;
 		private System.Windows.Forms.PictureBox PageFwd;
+		private CRSControlsLib.CrsLabel lblServTk1Ana;
+		private CRSControlsLib.CrsLabel lblFwdTk1Ana;
+		private CRSControlsLib.CrsLabel lblFwdTk6Ana;
+		private CRSControlsLib.CrsLabel lblFwdTk5Ana;
+		private CRSControlsLib.CrsLabel lblFwdTk4Ana;
+		private CRSControlsLib.CrsLabel lblFwdTk3Ana;
+		private CRSControlsLib.CrsLabel lblFwdTk2Ana;
+		private CRSControlsLib.CrsLabel lblOverTk1Ana;
+		private CRSControlsLib.CrsLabel lblServTk3Ana;
+		private CRSControlsLib.CrsLabel lblServTk2Ana;
+		private CRSControlsLib.CrsLabel lblAftTk7Ana;
+		private CRSControlsLib.CrsLabel lblAftTk8Ana;
+		private CRSControlsLib.CrsLabel lblAftTk9Ana;
+		private CRSControlsLib.CrsLabel lblAftTk10Ana;
+		private System.Windows.Forms.Panel pnlVlv3;
 	}
 }
