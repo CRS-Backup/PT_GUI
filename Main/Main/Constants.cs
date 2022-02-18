@@ -128,8 +128,6 @@ namespace PtGui
         public const string BMP_VALVE4_MON_OPENED = BMP_FOLDER + "valve4_open_mon.bmp";
         public const string BMP_VALVE4_MON_CLOSED = BMP_FOLDER + "valve4_closed_mon.bmp";
 
-
-
         //Valve5
         public const string BMP_VALVE5_OPENED = BMP_FOLDER + "valve5_open.bmp";
         public const string BMP_VALVE5_CLOSED = BMP_FOLDER + "valve5_closed.bmp";
@@ -160,5 +158,5 @@ namespace PtGui
         public const string COALESCER_OPEN = BMP_FOLDER + "c_open.bmp";
         public const string COALESCER_CLOSED = BMP_FOLDER + "c_closed.bmp";
 
-    }
+     }
 }

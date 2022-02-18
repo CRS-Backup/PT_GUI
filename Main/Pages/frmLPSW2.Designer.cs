@@ -33,8 +33,8 @@ namespace PtGui
 			this.staticText3 = new System.Windows.Forms.Label();
 			this.staticText1 = new System.Windows.Forms.Label();
 			this.staticText2 = new System.Windows.Forms.Label();
-			this.pnl3WAY2 = new System.Windows.Forms.Panel();
 			this.pnl3WAY1 = new System.Windows.Forms.Panel();
+			this.pnl3WAY2 = new System.Windows.Forms.Panel();
 			this.staticText4 = new System.Windows.Forms.Label();
 			this.staticText5 = new System.Windows.Forms.Label();
 			this.staticText6 = new System.Windows.Forms.Label();
@@ -44,9 +44,9 @@ namespace PtGui
 			this.staticText10 = new System.Windows.Forms.Label();
 			this.staticText11 = new System.Windows.Forms.Label();
 			this.staticText12 = new System.Windows.Forms.Label();
-			this.pnlH2ValveOpn = new System.Windows.Forms.Panel();
-			this.pnlH1ValveOpn = new System.Windows.Forms.Panel();
-			this.pnlVlvOverflow1Opn = new System.Windows.Forms.Panel();
+			this.pnlH2Valve = new System.Windows.Forms.Panel();
+			this.pnlH1Valve = new System.Windows.Forms.Panel();
+			this.pnlVlvOverflow1 = new System.Windows.Forms.Panel();
 			this.staticText14 = new System.Windows.Forms.Label();
 			this.pnlTop = new System.Windows.Forms.Panel();
 			this.pnlTopInner = new System.Windows.Forms.Panel();
@@ -95,23 +95,23 @@ namespace PtGui
 			this.staticText2.Text = "FROM HPSW";
 			this.staticText2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnl3WAY2
-			// 
-			this.pnl3WAY2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl3WAY2.BackgroundImage")));
-			this.pnl3WAY2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnl3WAY2.Location = new System.Drawing.Point(739, 358);
-			this.pnl3WAY2.Name = "pnl3WAY2";
-			this.pnl3WAY2.Size = new System.Drawing.Size(44, 62);
-			this.pnl3WAY2.TabIndex = 65;
-			// 
 			// pnl3WAY1
 			// 
 			this.pnl3WAY1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl3WAY1.BackgroundImage")));
 			this.pnl3WAY1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnl3WAY1.Location = new System.Drawing.Point(409, 353);
+			this.pnl3WAY1.Location = new System.Drawing.Point(739, 358);
 			this.pnl3WAY1.Name = "pnl3WAY1";
 			this.pnl3WAY1.Size = new System.Drawing.Size(44, 62);
-			this.pnl3WAY1.TabIndex = 66;
+			this.pnl3WAY1.TabIndex = 65;
+			// 
+			// pnl3WAY2
+			// 
+			this.pnl3WAY2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl3WAY2.BackgroundImage")));
+			this.pnl3WAY2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnl3WAY2.Location = new System.Drawing.Point(409, 353);
+			this.pnl3WAY2.Name = "pnl3WAY2";
+			this.pnl3WAY2.Size = new System.Drawing.Size(44, 62);
+			this.pnl3WAY2.TabIndex = 66;
 			// 
 			// staticText4
 			// 
@@ -156,7 +156,7 @@ namespace PtGui
 			this.staticText7.BackColor = System.Drawing.Color.Transparent;
 			this.staticText7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.staticText7.ForeColor = System.Drawing.Color.White;
-			this.staticText7.Location = new System.Drawing.Point(696, 616);
+			this.staticText7.Location = new System.Drawing.Point(696, 617);
 			this.staticText7.Name = "staticText7";
 			this.staticText7.Size = new System.Drawing.Size(93, 19);
 			this.staticText7.TabIndex = 70;
@@ -169,7 +169,7 @@ namespace PtGui
 			this.staticText8.BackColor = System.Drawing.Color.Transparent;
 			this.staticText8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.staticText8.ForeColor = System.Drawing.Color.White;
-			this.staticText8.Location = new System.Drawing.Point(386, 616);
+			this.staticText8.Location = new System.Drawing.Point(388, 617);
 			this.staticText8.Name = "staticText8";
 			this.staticText8.Size = new System.Drawing.Size(93, 19);
 			this.staticText8.TabIndex = 71;
@@ -224,33 +224,36 @@ namespace PtGui
 			this.staticText12.Text = "DISCHARGE O\'B\'D VALVE IN MGR";
 			this.staticText12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlH2ValveOpn
+			// pnlH2Valve
 			// 
-			this.pnlH2ValveOpn.BackColor = System.Drawing.Color.Transparent;
-			this.pnlH2ValveOpn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlH2ValveOpn.BackgroundImage")));
-			this.pnlH2ValveOpn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlH2ValveOpn.Location = new System.Drawing.Point(398, 664);
-			this.pnlH2ValveOpn.Name = "pnlH2ValveOpn";
-			this.pnlH2ValveOpn.Size = new System.Drawing.Size(33, 33);
-			this.pnlH2ValveOpn.TabIndex = 76;
+			this.pnlH2Valve.BackColor = System.Drawing.Color.Transparent;
+			this.pnlH2Valve.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlH2Valve.BackgroundImage")));
+			this.pnlH2Valve.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlH2Valve.Location = new System.Drawing.Point(398, 664);
+			this.pnlH2Valve.Name = "pnlH2Valve";
+			this.pnlH2Valve.Size = new System.Drawing.Size(33, 33);
+			this.pnlH2Valve.TabIndex = 76;
+			this.pnlH2Valve.Click += new System.EventHandler(this.pnlH2Valve_Click);
 			// 
-			// pnlH1ValveOpn
+			// pnlH1Valve
 			// 
-			this.pnlH1ValveOpn.BackColor = System.Drawing.Color.Transparent;
-			this.pnlH1ValveOpn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlH1ValveOpn.BackgroundImage")));
-			this.pnlH1ValveOpn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlH1ValveOpn.Location = new System.Drawing.Point(756, 664);
-			this.pnlH1ValveOpn.Name = "pnlH1ValveOpn";
-			this.pnlH1ValveOpn.Size = new System.Drawing.Size(33, 33);
-			this.pnlH1ValveOpn.TabIndex = 77;
+			this.pnlH1Valve.BackColor = System.Drawing.Color.Transparent;
+			this.pnlH1Valve.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlH1Valve.BackgroundImage")));
+			this.pnlH1Valve.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlH1Valve.Location = new System.Drawing.Point(756, 664);
+			this.pnlH1Valve.Name = "pnlH1Valve";
+			this.pnlH1Valve.Size = new System.Drawing.Size(33, 33);
+			this.pnlH1Valve.TabIndex = 77;
+			this.pnlH1Valve.Click += new System.EventHandler(this.pnlH1Valve_Click);
 			// 
-			// pnlVlvOverflow1Opn
+			// pnlVlvOverflow1
 			// 
-			this.pnlVlvOverflow1Opn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvOverflow1Opn.BackgroundImage")));
-			this.pnlVlvOverflow1Opn.Location = new System.Drawing.Point(945, 406);
-			this.pnlVlvOverflow1Opn.Name = "pnlVlvOverflow1Opn";
-			this.pnlVlvOverflow1Opn.Size = new System.Drawing.Size(58, 33);
-			this.pnlVlvOverflow1Opn.TabIndex = 43;
+			this.pnlVlvOverflow1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvOverflow1.BackgroundImage")));
+			this.pnlVlvOverflow1.Location = new System.Drawing.Point(945, 406);
+			this.pnlVlvOverflow1.Name = "pnlVlvOverflow1";
+			this.pnlVlvOverflow1.Size = new System.Drawing.Size(58, 33);
+			this.pnlVlvOverflow1.TabIndex = 43;
+			this.pnlVlvOverflow1.Click += new System.EventHandler(this.pnlVlvOverflow1_Click);
 			// 
 			// staticText14
 			// 
@@ -338,9 +341,9 @@ namespace PtGui
 			this.ClientSize = new System.Drawing.Size(1280, 791);
 			this.Controls.Add(this.pnlTop);
 			this.Controls.Add(this.staticText14);
-			this.Controls.Add(this.pnlVlvOverflow1Opn);
-			this.Controls.Add(this.pnlH1ValveOpn);
-			this.Controls.Add(this.pnlH2ValveOpn);
+			this.Controls.Add(this.pnlVlvOverflow1);
+			this.Controls.Add(this.pnlH1Valve);
+			this.Controls.Add(this.pnlH2Valve);
 			this.Controls.Add(this.staticText12);
 			this.Controls.Add(this.staticText11);
 			this.Controls.Add(this.staticText10);
@@ -350,8 +353,8 @@ namespace PtGui
 			this.Controls.Add(this.staticText6);
 			this.Controls.Add(this.staticText5);
 			this.Controls.Add(this.staticText4);
-			this.Controls.Add(this.pnl3WAY1);
 			this.Controls.Add(this.pnl3WAY2);
+			this.Controls.Add(this.pnl3WAY1);
 			this.Controls.Add(this.staticText2);
 			this.Controls.Add(this.staticText1);
 			this.Controls.Add(this.staticText3);
@@ -371,8 +374,8 @@ namespace PtGui
 		private System.Windows.Forms.Label staticText3;
 		private System.Windows.Forms.Label staticText1;
 		private System.Windows.Forms.Label staticText2;
-		private System.Windows.Forms.Panel pnl3WAY2;
 		private System.Windows.Forms.Panel pnl3WAY1;
+		private System.Windows.Forms.Panel pnl3WAY2;
 		private System.Windows.Forms.Label staticText4;
 		private System.Windows.Forms.Label staticText5;
 		private System.Windows.Forms.Label staticText6;
@@ -382,9 +385,9 @@ namespace PtGui
 		private System.Windows.Forms.Label staticText10;
 		private System.Windows.Forms.Label staticText11;
 		private System.Windows.Forms.Label staticText12;
-		private System.Windows.Forms.Panel pnlH2ValveOpn;
-		private System.Windows.Forms.Panel pnlH1ValveOpn;
-		private System.Windows.Forms.Panel pnlVlvOverflow1Opn;
+		private System.Windows.Forms.Panel pnlH2Valve;
+		private System.Windows.Forms.Panel pnlH1Valve;
+		private System.Windows.Forms.Panel pnlVlvOverflow1;
 		private System.Windows.Forms.Label staticText14;
 		private System.Windows.Forms.Panel pnlTop;
 		private System.Windows.Forms.Panel pnlTopInner;

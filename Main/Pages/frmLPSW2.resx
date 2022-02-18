@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pnl3WAY2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnl3WAY1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3eDgAAAAAAADYEAAAoAAAALAAAAD4AAAABAAgAAAAAAAAAAACEEgAAhBIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -186,7 +186,7 @@
         dHQPDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8=
 </value>
   </data>
-  <data name="pnl3WAY1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnl3WAY2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3eDgAAAAAAADYEAAAoAAAALAAAAD4AAAABAAgAAAAAAAAAAACDEgAAgxIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -254,7 +254,7 @@
         Dw8PDw8PdHR0dHR0dHR0dHR0dHR0dHR0dA8=
 </value>
   </data>
-  <data name="pnlH2ValveOpn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlH2Valve.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3aCAAAAAAAADYEAAAoAAAAIQAAACEAAAABAAgAAAAAAAAAAACEEgAAhBIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -296,7 +296,7 @@
         dHR0dHR0DwAAAA90dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0DwAAAA==
 </value>
   </data>
-  <data name="pnlH1ValveOpn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlH1Valve.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3aCAAAAAAAADYEAAAoAAAAIQAAACEAAAABAAgAAAAAAAAAAACEEgAAhBIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -338,7 +338,7 @@
         dHR0dHR0DwAAAA90dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0DwAAAA==
 </value>
   </data>
-  <data name="pnlVlvOverflow1Opn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlVlvOverflow1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3yCwAAAAAAADYEAAAoAAAAOgAAACEAAAABAAgAAAAAAAAAAACEEgAAhBIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb

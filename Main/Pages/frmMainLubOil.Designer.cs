@@ -41,19 +41,19 @@ namespace PtGui
 			this.staticText12 = new System.Windows.Forms.Label();
 			this.pnlADLOPump = new System.Windows.Forms.Panel();
 			this.lblADLOPump = new System.Windows.Forms.Label();
-			this.pnlPump4Green = new System.Windows.Forms.Panel();
+			this.pnlPump4 = new System.Windows.Forms.Panel();
 			this.staticText11 = new System.Windows.Forms.Label();
 			this.staticText10 = new System.Windows.Forms.Label();
 			this.staticText9 = new System.Windows.Forms.Label();
 			this.staticText8 = new System.Windows.Forms.Label();
 			this.staticText7 = new System.Windows.Forms.Label();
 			this.staticText6 = new System.Windows.Forms.Label();
-			this.pnlVlv1Opn = new System.Windows.Forms.Panel();
-			this.pnlVlv2Clsd = new System.Windows.Forms.Panel();
-			this.pnlPump2Green = new System.Windows.Forms.Panel();
-			this.label1 = new System.Windows.Forms.Label();
-			this.pnlPump1Green = new System.Windows.Forms.Panel();
-			this.pnlPump3Red = new System.Windows.Forms.Panel();
+			this.pnlVlv1 = new System.Windows.Forms.Panel();
+			this.pnlVlv2 = new System.Windows.Forms.Panel();
+			this.pnlPump1 = new System.Windows.Forms.Panel();
+			this.staticText17 = new System.Windows.Forms.Label();
+			this.pnlPump2 = new System.Windows.Forms.Panel();
+			this.pnlPump3 = new System.Windows.Forms.Panel();
 			this.staticText5 = new System.Windows.Forms.Label();
 			this.staticText4 = new System.Windows.Forms.Label();
 			this.staticText3 = new System.Windows.Forms.Label();
@@ -64,6 +64,7 @@ namespace PtGui
 			this.lblPageName = new System.Windows.Forms.Label();
 			this.PageBack = new System.Windows.Forms.PictureBox();
 			this.PageFwd = new System.Windows.Forms.PictureBox();
+			this.pnlVlv3 = new System.Windows.Forms.Panel();
 			this.pnlMainLubOil.SuspendLayout();
 			this.pnlADLOPump.SuspendLayout();
 			this.pnlTop.SuspendLayout();
@@ -76,6 +77,7 @@ namespace PtGui
 			// 
 			this.pnlMainLubOil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMainLubOil.BackgroundImage")));
 			this.pnlMainLubOil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pnlMainLubOil.Controls.Add(this.pnlVlv3);
 			this.pnlMainLubOil.Controls.Add(this.pnlVlvADLO);
 			this.pnlMainLubOil.Controls.Add(this.lblMGR);
 			this.pnlMainLubOil.Controls.Add(this.lblGTR);
@@ -85,19 +87,19 @@ namespace PtGui
 			this.pnlMainLubOil.Controls.Add(this.staticText13);
 			this.pnlMainLubOil.Controls.Add(this.staticText12);
 			this.pnlMainLubOil.Controls.Add(this.pnlADLOPump);
-			this.pnlMainLubOil.Controls.Add(this.pnlPump4Green);
+			this.pnlMainLubOil.Controls.Add(this.pnlPump4);
 			this.pnlMainLubOil.Controls.Add(this.staticText11);
 			this.pnlMainLubOil.Controls.Add(this.staticText10);
 			this.pnlMainLubOil.Controls.Add(this.staticText9);
 			this.pnlMainLubOil.Controls.Add(this.staticText8);
 			this.pnlMainLubOil.Controls.Add(this.staticText7);
 			this.pnlMainLubOil.Controls.Add(this.staticText6);
-			this.pnlMainLubOil.Controls.Add(this.pnlVlv1Opn);
-			this.pnlMainLubOil.Controls.Add(this.pnlVlv2Clsd);
-			this.pnlMainLubOil.Controls.Add(this.pnlPump2Green);
-			this.pnlMainLubOil.Controls.Add(this.label1);
-			this.pnlMainLubOil.Controls.Add(this.pnlPump1Green);
-			this.pnlMainLubOil.Controls.Add(this.pnlPump3Red);
+			this.pnlMainLubOil.Controls.Add(this.pnlVlv1);
+			this.pnlMainLubOil.Controls.Add(this.pnlVlv2);
+			this.pnlMainLubOil.Controls.Add(this.pnlPump1);
+			this.pnlMainLubOil.Controls.Add(this.staticText17);
+			this.pnlMainLubOil.Controls.Add(this.pnlPump2);
+			this.pnlMainLubOil.Controls.Add(this.pnlPump3);
 			this.pnlMainLubOil.Controls.Add(this.staticText5);
 			this.pnlMainLubOil.Controls.Add(this.staticText4);
 			this.pnlMainLubOil.Controls.Add(this.staticText3);
@@ -118,6 +120,7 @@ namespace PtGui
 			this.pnlVlvADLO.Name = "pnlVlvADLO";
 			this.pnlVlvADLO.Size = new System.Drawing.Size(45, 45);
 			this.pnlVlvADLO.TabIndex = 53;
+			this.pnlVlvADLO.Click += new System.EventHandler(this.pnlVlvADLO_Click);
 			// 
 			// lblMGR
 			// 
@@ -235,14 +238,15 @@ namespace PtGui
 			this.lblADLOPump.Text = "ADLO Pp";
 			this.lblADLOPump.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlPump4Green
+			// pnlPump4
 			// 
-			this.pnlPump4Green.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump4Green.BackgroundImage")));
-			this.pnlPump4Green.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlPump4Green.Location = new System.Drawing.Point(791, 426);
-			this.pnlPump4Green.Name = "pnlPump4Green";
-			this.pnlPump4Green.Size = new System.Drawing.Size(84, 84);
-			this.pnlPump4Green.TabIndex = 60;
+			this.pnlPump4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump4.BackgroundImage")));
+			this.pnlPump4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlPump4.Location = new System.Drawing.Point(791, 426);
+			this.pnlPump4.Name = "pnlPump4";
+			this.pnlPump4.Size = new System.Drawing.Size(84, 84);
+			this.pnlPump4.TabIndex = 60;
+			this.pnlPump4.Click += new System.EventHandler(this.pnlPump4_Click);
 			// 
 			// staticText11
 			// 
@@ -324,61 +328,64 @@ namespace PtGui
 			this.staticText6.Text = "PORT LCP";
 			this.staticText6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlVlv1Opn
+			// pnlVlv1
 			// 
-			this.pnlVlv1Opn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv1Opn.BackgroundImage")));
-			this.pnlVlv1Opn.Location = new System.Drawing.Point(216, 170);
-			this.pnlVlv1Opn.Name = "pnlVlv1Opn";
-			this.pnlVlv1Opn.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlv1Opn.TabIndex = 53;
+			this.pnlVlv1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv1.BackgroundImage")));
+			this.pnlVlv1.Location = new System.Drawing.Point(216, 170);
+			this.pnlVlv1.Name = "pnlVlv1";
+			this.pnlVlv1.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlv1.TabIndex = 53;
+			this.pnlVlv1.Click += new System.EventHandler(this.pnlVlv1Opn_Click);
 			// 
-			// pnlVlv2Clsd
+			// pnlVlv2
 			// 
-			this.pnlVlv2Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv2Clsd.BackgroundImage")));
-			this.pnlVlv2Clsd.Location = new System.Drawing.Point(259, 467);
-			this.pnlVlv2Clsd.Name = "pnlVlv2Clsd";
-			this.pnlVlv2Clsd.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlv2Clsd.TabIndex = 52;
+			this.pnlVlv2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv2.BackgroundImage")));
+			this.pnlVlv2.Location = new System.Drawing.Point(259, 467);
+			this.pnlVlv2.Name = "pnlVlv2";
+			this.pnlVlv2.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlv2.TabIndex = 52;
+			this.pnlVlv2.Click += new System.EventHandler(this.pnlVlv2_Click);
 			// 
-			// pnlPump2Green
+			// pnlPump1
 			// 
-			this.pnlPump2Green.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump2Green.BackgroundImage")));
-			this.pnlPump2Green.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlPump2Green.Location = new System.Drawing.Point(314, 547);
-			this.pnlPump2Green.Name = "pnlPump2Green";
-			this.pnlPump2Green.Size = new System.Drawing.Size(84, 84);
-			this.pnlPump2Green.TabIndex = 51;
+			this.pnlPump1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump1.BackgroundImage")));
+			this.pnlPump1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlPump1.Location = new System.Drawing.Point(314, 547);
+			this.pnlPump1.Name = "pnlPump1";
+			this.pnlPump1.Size = new System.Drawing.Size(84, 84);
+			this.pnlPump1.TabIndex = 51;
 			// 
-			// label1
+			// staticText17
 			// 
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.label1.Location = new System.Drawing.Point(425, 546);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(66, 86);
-			this.label1.TabIndex = 50;
-			this.label1.Text = "STBD BELT DRIVEN Pp";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText17.BackColor = System.Drawing.Color.Transparent;
+			this.staticText17.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.staticText17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.staticText17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.staticText17.Location = new System.Drawing.Point(425, 546);
+			this.staticText17.Name = "staticText17";
+			this.staticText17.Size = new System.Drawing.Size(66, 86);
+			this.staticText17.TabIndex = 50;
+			this.staticText17.Text = "STBD BELT DRIVEN Pp";
+			this.staticText17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlPump1Green
+			// pnlPump2
 			// 
-			this.pnlPump1Green.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump1Green.BackgroundImage")));
-			this.pnlPump1Green.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlPump1Green.Location = new System.Drawing.Point(314, 281);
-			this.pnlPump1Green.Name = "pnlPump1Green";
-			this.pnlPump1Green.Size = new System.Drawing.Size(84, 84);
-			this.pnlPump1Green.TabIndex = 49;
+			this.pnlPump2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump2.BackgroundImage")));
+			this.pnlPump2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlPump2.Location = new System.Drawing.Point(314, 281);
+			this.pnlPump2.Name = "pnlPump2";
+			this.pnlPump2.Size = new System.Drawing.Size(84, 84);
+			this.pnlPump2.TabIndex = 49;
 			// 
-			// pnlPump3Red
+			// pnlPump3
 			// 
-			this.pnlPump3Red.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump3Red.BackgroundImage")));
-			this.pnlPump3Red.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlPump3Red.Location = new System.Drawing.Point(791, 313);
-			this.pnlPump3Red.Name = "pnlPump3Red";
-			this.pnlPump3Red.Size = new System.Drawing.Size(84, 84);
-			this.pnlPump3Red.TabIndex = 48;
+			this.pnlPump3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump3.BackgroundImage")));
+			this.pnlPump3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlPump3.Location = new System.Drawing.Point(791, 313);
+			this.pnlPump3.Name = "pnlPump3";
+			this.pnlPump3.Size = new System.Drawing.Size(84, 84);
+			this.pnlPump3.TabIndex = 48;
+			this.pnlPump3.Click += new System.EventHandler(this.pnlPump3_Click);
 			// 
 			// staticText5
 			// 
@@ -510,6 +517,15 @@ namespace PtGui
 			this.PageFwd.TabStop = false;
 			this.PageFwd.Click += new System.EventHandler(this.PageFwd_Click);
 			// 
+			// pnlVlv3
+			// 
+			this.pnlVlv3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv3.BackgroundImage")));
+			this.pnlVlv3.Location = new System.Drawing.Point(61, 352);
+			this.pnlVlv3.Name = "pnlVlv3";
+			this.pnlVlv3.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlv3.TabIndex = 68;
+			this.pnlVlv3.Click += new System.EventHandler(this.pnlVlv3_Click);
+			// 
 			// frmMainLubOil
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -544,18 +560,18 @@ namespace PtGui
 		private System.Windows.Forms.Label staticText3;
 		private System.Windows.Forms.Label staticText2;
 		private System.Windows.Forms.Label staticText1;
-		private System.Windows.Forms.Panel pnlPump2Green;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Panel pnlPump1Green;
-		private System.Windows.Forms.Panel pnlPump3Red;
-		private System.Windows.Forms.Panel pnlVlv2Clsd;
-		private System.Windows.Forms.Panel pnlVlv1Opn;
+		private System.Windows.Forms.Panel pnlPump1;
+		private System.Windows.Forms.Label staticText17;
+		private System.Windows.Forms.Panel pnlPump2;
+		private System.Windows.Forms.Panel pnlPump3;
+		private System.Windows.Forms.Panel pnlVlv2;
+		private System.Windows.Forms.Panel pnlVlv1;
 		private System.Windows.Forms.Label staticText14;
 		private System.Windows.Forms.Label staticText13;
 		private System.Windows.Forms.Label staticText12;
 		private System.Windows.Forms.Panel pnlADLOPump;
 		private System.Windows.Forms.Label lblADLOPump;
-		private System.Windows.Forms.Panel pnlPump4Green;
+		private System.Windows.Forms.Panel pnlPump4;
 		private System.Windows.Forms.Label staticText11;
 		private System.Windows.Forms.Label staticText10;
 		private System.Windows.Forms.Label staticText9;
@@ -567,5 +583,6 @@ namespace PtGui
 		private System.Windows.Forms.Panel pnlVlvADLO;
 		private System.Windows.Forms.Label lblMGR;
 		private System.Windows.Forms.Label lblGTR;
+		private System.Windows.Forms.Panel pnlVlv3;
 	}
 }

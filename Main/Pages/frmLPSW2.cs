@@ -35,5 +35,27 @@ namespace PtGui
 		{
 			GuiCore.show_form("frmOutstationMenu", this);
 		}
+
+		private void pnlVlvOverflow1_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LILSIV01", Constants.BMP_VALVE4_OPENED, Constants.BMP_VALVE4_CLOSED);
+			// LLSIV01
+
+		}
+
+		private void pnlH2Valve_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LILSNU8", Constants.BMP_VALVE3_OPENED, Constants.BMP_VALVE3_CLOSED);
+			// LLSNU8
+
+		}
+
+		private void pnlH1Valve_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LILSNU9", Constants.BMP_VALVE3_OPENED, Constants.BMP_VALVE3_CLOSED);
+			// LLSNU9
+
+		}
 	}
-}
+}   //   pnl3WAY1 = ILLSNDG3 1 = TO DISCH, 2 = TO ENG MONITORING ONLY
+	//	 pnl3WAY2 = ILLSNDG4 1 = TO DISCH, 2 = TO ENG MONITORING ONLY
