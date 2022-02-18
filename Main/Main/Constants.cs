@@ -97,6 +97,9 @@ namespace PtGui
         public const string BMP_RESET_BUTTON_RED_DOWN = BMP_FOLDER + "reset_button_red_pressed.bmp";
         public const string BMP_RESET_BUTTON_RED_UP = BMP_FOLDER + "reset_button_red.bmp";
 
+        public const string BMP_RESET_BUTTON_GREY_DOWN = BMP_FOLDER + "reset_button_grey_pressed.bmp";
+        public const string BMP_RESET_BUTTON_GREY_UP = BMP_FOLDER + "reset_button_grey.bmp";
+
         //Hexagonal buttons
         public const string BMP_HEX_BUTTON_GREEN_DOWN = BMP_FOLDER + "hex_button_green_pressed.bmp";
         public const string BMP_HEX_BUTTON_GREEN_UP = BMP_FOLDER + "hex_button_green.bmp";

@@ -32,6 +32,8 @@ namespace PtGui
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGB_LCP));
 			this.pnlGB_LCP = new System.Windows.Forms.Panel();
+			this.pnlPort = new System.Windows.Forms.Panel();
+			this.lblPort = new System.Windows.Forms.Label();
 			this.lblOperatingPressure = new System.Windows.Forms.Label();
 			this.pnlOffGrey = new System.Windows.Forms.Panel();
 			this.pnlLOWGrey = new System.Windows.Forms.Panel();
@@ -41,15 +43,15 @@ namespace PtGui
 			this.staticText17 = new System.Windows.Forms.Label();
 			this.staticText16 = new System.Windows.Forms.Label();
 			this.staticText15 = new System.Windows.Forms.Label();
-			this.pnlCOVlv2Clsd = new System.Windows.Forms.Panel();
-			this.pnlCOVlv1Opn = new System.Windows.Forms.Panel();
+			this.pnlCOVlv2 = new System.Windows.Forms.Panel();
+			this.pnlCOVlv1 = new System.Windows.Forms.Panel();
 			this.staticText14 = new System.Windows.Forms.Label();
 			this.pnlVlvClsd = new System.Windows.Forms.Panel();
 			this.staticText19 = new System.Windows.Forms.Label();
 			this.staticText13 = new System.Windows.Forms.Label();
 			this.staticText12 = new System.Windows.Forms.Label();
 			this.staticText11 = new System.Windows.Forms.Label();
-			this.pnlHandOn = new System.Windows.Forms.Panel();
+			this.pnlHandPp = new System.Windows.Forms.Panel();
 			this.pnlHandOff = new System.Windows.Forms.Panel();
 			this.pnlRelease = new System.Windows.Forms.Panel();
 			this.lblRelease = new System.Windows.Forms.Label();
@@ -62,14 +64,13 @@ namespace PtGui
 			this.pnlSSSBaulkGrey = new System.Windows.Forms.Panel();
 			this.pnlSSSRatchetGrey = new System.Windows.Forms.Panel();
 			this.pnlSSSEngageGrey = new System.Windows.Forms.Panel();
-			this.pnlTBOffGreen = new System.Windows.Forms.Panel();
-			this.pnlTBOnGrey = new System.Windows.Forms.Panel();
+			this.pnlTBOff = new System.Windows.Forms.Panel();
+			this.pnlTBOn = new System.Windows.Forms.Panel();
 			this.lblSSS = new System.Windows.Forms.Label();
 			this.lblTransBrake = new System.Windows.Forms.Label();
 			this.lblGearBoxState = new System.Windows.Forms.Label();
 			this.pnl3WayVlv = new System.Windows.Forms.Panel();
-			this.pnlClutchOn = new System.Windows.Forms.Panel();
-			this.pnlClutchOff = new System.Windows.Forms.Panel();
+			this.pnlClutchPp = new System.Windows.Forms.Panel();
 			this.staticText10 = new System.Windows.Forms.Label();
 			this.staticText9 = new System.Windows.Forms.Label();
 			this.staticText5 = new System.Windows.Forms.Label();
@@ -84,24 +85,21 @@ namespace PtGui
 			this.picArrowR = new System.Windows.Forms.PictureBox();
 			this.lblDisengage = new System.Windows.Forms.Label();
 			this.staticText7 = new System.Windows.Forms.Label();
-			this.pnlClutchEngUp = new System.Windows.Forms.Panel();
-			this.pnlClutchDisUp = new System.Windows.Forms.Panel();
+			this.pnlClutchEng = new System.Windows.Forms.Panel();
+			this.pnlClutchDis = new System.Windows.Forms.Panel();
 			this.lblSSSClutch = new System.Windows.Forms.Label();
-			this.pnlTBIsolVlvOpn = new System.Windows.Forms.Panel();
+			this.pnlTBIsolVlv = new System.Windows.Forms.Panel();
 			this.staticText1 = new System.Windows.Forms.Label();
 			this.pnlTBVlvCLsd = new System.Windows.Forms.Panel();
 			this.staticText4 = new System.Windows.Forms.Label();
 			this.staticText3 = new System.Windows.Forms.Label();
 			this.staticText2 = new System.Windows.Forms.Label();
 			this.lblSelect = new System.Windows.Forms.Label();
-			this.pnlStbdOff = new System.Windows.Forms.Panel();
-			this.lblStbdOff = new System.Windows.Forms.Label();
-			this.pnlPortOn = new System.Windows.Forms.Panel();
-			this.lblPortOn = new System.Windows.Forms.Label();
+			this.pnlStbd = new System.Windows.Forms.Panel();
+			this.lblStbd = new System.Windows.Forms.Label();
 			this.pnlIndRemote = new System.Windows.Forms.Panel();
 			this.pnlIndLocal = new System.Windows.Forms.Panel();
-			this.pnlSWLocal = new System.Windows.Forms.Panel();
-			this.pnlSWRemote = new System.Windows.Forms.Panel();
+			this.pnlSWLocalRemote = new System.Windows.Forms.Panel();
 			this.lblRemoteSW = new System.Windows.Forms.Label();
 			this.lblLocalSW = new System.Windows.Forms.Label();
 			this.pnlRemote = new System.Windows.Forms.Panel();
@@ -114,10 +112,6 @@ namespace PtGui
 			this.lblShut = new System.Windows.Forms.Label();
 			this.pnlOpen = new System.Windows.Forms.Panel();
 			this.lblOpen = new System.Windows.Forms.Label();
-			this.pnlStbdOn = new System.Windows.Forms.Panel();
-			this.lblStbdOn = new System.Windows.Forms.Label();
-			this.pnlPortOff = new System.Windows.Forms.Panel();
-			this.lblPort = new System.Windows.Forms.Label();
 			this.pnlTop = new System.Windows.Forms.Panel();
 			this.pnlTopInner = new System.Windows.Forms.Panel();
 			this.lblPageName = new System.Windows.Forms.Label();
@@ -125,6 +119,7 @@ namespace PtGui
 			this.PageFwd = new System.Windows.Forms.PictureBox();
 			this.tmrUpdate = new System.Windows.Forms.Timer(this.components);
 			this.pnlGB_LCP.SuspendLayout();
+			this.pnlPort.SuspendLayout();
 			this.pnlRelease.SuspendLayout();
 			this.pnlOperate2.SuspendLayout();
 			this.pnlOperate1.SuspendLayout();
@@ -133,14 +128,11 @@ namespace PtGui
 			((System.ComponentModel.ISupportInitialize)(this.picArrowL)).BeginInit();
 			this.pnlDisengage.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.picArrowR)).BeginInit();
-			this.pnlStbdOff.SuspendLayout();
-			this.pnlPortOn.SuspendLayout();
+			this.pnlStbd.SuspendLayout();
 			this.pnlRemote.SuspendLayout();
 			this.pnlLocal.SuspendLayout();
 			this.pnlShut.SuspendLayout();
 			this.pnlOpen.SuspendLayout();
-			this.pnlStbdOn.SuspendLayout();
-			this.pnlPortOff.SuspendLayout();
 			this.pnlTop.SuspendLayout();
 			this.pnlTopInner.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.PageBack)).BeginInit();
@@ -153,6 +145,7 @@ namespace PtGui
 			this.pnlGB_LCP.BackColor = System.Drawing.Color.Transparent;
 			this.pnlGB_LCP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlGB_LCP.BackgroundImage")));
 			this.pnlGB_LCP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.pnlGB_LCP.Controls.Add(this.pnlPort);
 			this.pnlGB_LCP.Controls.Add(this.lblOperatingPressure);
 			this.pnlGB_LCP.Controls.Add(this.pnlOffGrey);
 			this.pnlGB_LCP.Controls.Add(this.pnlLOWGrey);
@@ -162,15 +155,15 @@ namespace PtGui
 			this.pnlGB_LCP.Controls.Add(this.staticText17);
 			this.pnlGB_LCP.Controls.Add(this.staticText16);
 			this.pnlGB_LCP.Controls.Add(this.staticText15);
-			this.pnlGB_LCP.Controls.Add(this.pnlCOVlv2Clsd);
-			this.pnlGB_LCP.Controls.Add(this.pnlCOVlv1Opn);
+			this.pnlGB_LCP.Controls.Add(this.pnlCOVlv2);
+			this.pnlGB_LCP.Controls.Add(this.pnlCOVlv1);
 			this.pnlGB_LCP.Controls.Add(this.staticText14);
 			this.pnlGB_LCP.Controls.Add(this.pnlVlvClsd);
 			this.pnlGB_LCP.Controls.Add(this.staticText19);
 			this.pnlGB_LCP.Controls.Add(this.staticText13);
 			this.pnlGB_LCP.Controls.Add(this.staticText12);
 			this.pnlGB_LCP.Controls.Add(this.staticText11);
-			this.pnlGB_LCP.Controls.Add(this.pnlHandOn);
+			this.pnlGB_LCP.Controls.Add(this.pnlHandPp);
 			this.pnlGB_LCP.Controls.Add(this.pnlHandOff);
 			this.pnlGB_LCP.Controls.Add(this.pnlRelease);
 			this.pnlGB_LCP.Controls.Add(this.pnlOperate2);
@@ -180,14 +173,13 @@ namespace PtGui
 			this.pnlGB_LCP.Controls.Add(this.pnlSSSBaulkGrey);
 			this.pnlGB_LCP.Controls.Add(this.pnlSSSRatchetGrey);
 			this.pnlGB_LCP.Controls.Add(this.pnlSSSEngageGrey);
-			this.pnlGB_LCP.Controls.Add(this.pnlTBOffGreen);
-			this.pnlGB_LCP.Controls.Add(this.pnlTBOnGrey);
+			this.pnlGB_LCP.Controls.Add(this.pnlTBOff);
+			this.pnlGB_LCP.Controls.Add(this.pnlTBOn);
 			this.pnlGB_LCP.Controls.Add(this.lblSSS);
 			this.pnlGB_LCP.Controls.Add(this.lblTransBrake);
 			this.pnlGB_LCP.Controls.Add(this.lblGearBoxState);
 			this.pnlGB_LCP.Controls.Add(this.pnl3WayVlv);
-			this.pnlGB_LCP.Controls.Add(this.pnlClutchOn);
-			this.pnlGB_LCP.Controls.Add(this.pnlClutchOff);
+			this.pnlGB_LCP.Controls.Add(this.pnlClutchPp);
 			this.pnlGB_LCP.Controls.Add(this.staticText10);
 			this.pnlGB_LCP.Controls.Add(this.staticText9);
 			this.pnlGB_LCP.Controls.Add(this.staticText5);
@@ -197,22 +189,20 @@ namespace PtGui
 			this.pnlGB_LCP.Controls.Add(this.pnlEngage);
 			this.pnlGB_LCP.Controls.Add(this.pnlDisengage);
 			this.pnlGB_LCP.Controls.Add(this.staticText7);
-			this.pnlGB_LCP.Controls.Add(this.pnlClutchEngUp);
-			this.pnlGB_LCP.Controls.Add(this.pnlClutchDisUp);
+			this.pnlGB_LCP.Controls.Add(this.pnlClutchEng);
+			this.pnlGB_LCP.Controls.Add(this.pnlClutchDis);
 			this.pnlGB_LCP.Controls.Add(this.lblSSSClutch);
-			this.pnlGB_LCP.Controls.Add(this.pnlTBIsolVlvOpn);
+			this.pnlGB_LCP.Controls.Add(this.pnlTBIsolVlv);
 			this.pnlGB_LCP.Controls.Add(this.staticText1);
 			this.pnlGB_LCP.Controls.Add(this.pnlTBVlvCLsd);
 			this.pnlGB_LCP.Controls.Add(this.staticText4);
 			this.pnlGB_LCP.Controls.Add(this.staticText3);
 			this.pnlGB_LCP.Controls.Add(this.staticText2);
 			this.pnlGB_LCP.Controls.Add(this.lblSelect);
-			this.pnlGB_LCP.Controls.Add(this.pnlStbdOff);
-			this.pnlGB_LCP.Controls.Add(this.pnlPortOn);
+			this.pnlGB_LCP.Controls.Add(this.pnlStbd);
 			this.pnlGB_LCP.Controls.Add(this.pnlIndRemote);
 			this.pnlGB_LCP.Controls.Add(this.pnlIndLocal);
-			this.pnlGB_LCP.Controls.Add(this.pnlSWLocal);
-			this.pnlGB_LCP.Controls.Add(this.pnlSWRemote);
+			this.pnlGB_LCP.Controls.Add(this.pnlSWLocalRemote);
 			this.pnlGB_LCP.Controls.Add(this.lblRemoteSW);
 			this.pnlGB_LCP.Controls.Add(this.lblLocalSW);
 			this.pnlGB_LCP.Controls.Add(this.pnlRemote);
@@ -221,8 +211,6 @@ namespace PtGui
 			this.pnlGB_LCP.Controls.Add(this.lblLCPDoor);
 			this.pnlGB_LCP.Controls.Add(this.pnlShut);
 			this.pnlGB_LCP.Controls.Add(this.pnlOpen);
-			this.pnlGB_LCP.Controls.Add(this.pnlStbdOn);
-			this.pnlGB_LCP.Controls.Add(this.pnlPortOff);
 			this.pnlGB_LCP.Controls.Add(this.pnlTop);
 			this.pnlGB_LCP.ForeColor = System.Drawing.SystemColors.ButtonFace;
 			this.pnlGB_LCP.Location = new System.Drawing.Point(0, 0);
@@ -230,6 +218,32 @@ namespace PtGui
 			this.pnlGB_LCP.Name = "pnlGB_LCP";
 			this.pnlGB_LCP.Size = new System.Drawing.Size(1280, 791);
 			this.pnlGB_LCP.TabIndex = 17;
+			// 
+			// pnlPort
+			// 
+			this.pnlPort.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPort.BackgroundImage")));
+			this.pnlPort.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pnlPort.Controls.Add(this.lblPort);
+			this.pnlPort.Location = new System.Drawing.Point(41, 134);
+			this.pnlPort.Name = "pnlPort";
+			this.pnlPort.Size = new System.Drawing.Size(143, 80);
+			this.pnlPort.TabIndex = 35;
+			this.pnlPort.Click += new System.EventHandler(this.pnlPort_Click);
+			// 
+			// lblPort
+			// 
+			this.lblPort.AutoSize = true;
+			this.lblPort.BackColor = System.Drawing.Color.Transparent;
+			this.lblPort.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.lblPort.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblPort.ForeColor = System.Drawing.Color.White;
+			this.lblPort.Location = new System.Drawing.Point(34, 28);
+			this.lblPort.Name = "lblPort";
+			this.lblPort.Size = new System.Drawing.Size(68, 24);
+			this.lblPort.TabIndex = 34;
+			this.lblPort.Text = "PORT";
+			this.lblPort.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblPort.Click += new System.EventHandler(this.pnlPort_Click);
 			// 
 			// lblOperatingPressure
 			// 
@@ -334,23 +348,23 @@ namespace PtGui
 			this.staticText15.Text = "BRAKE";
 			this.staticText15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlCOVlv2Clsd
+			// pnlCOVlv2
 			// 
-			this.pnlCOVlv2Clsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCOVlv2Clsd.BackgroundImage")));
-			this.pnlCOVlv2Clsd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlCOVlv2Clsd.Location = new System.Drawing.Point(942, 579);
-			this.pnlCOVlv2Clsd.Name = "pnlCOVlv2Clsd";
-			this.pnlCOVlv2Clsd.Size = new System.Drawing.Size(29, 39);
-			this.pnlCOVlv2Clsd.TabIndex = 71;
+			this.pnlCOVlv2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCOVlv2.BackgroundImage")));
+			this.pnlCOVlv2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlCOVlv2.Location = new System.Drawing.Point(942, 579);
+			this.pnlCOVlv2.Name = "pnlCOVlv2";
+			this.pnlCOVlv2.Size = new System.Drawing.Size(29, 39);
+			this.pnlCOVlv2.TabIndex = 71;
 			// 
-			// pnlCOVlv1Opn
+			// pnlCOVlv1
 			// 
-			this.pnlCOVlv1Opn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCOVlv1Opn.BackgroundImage")));
-			this.pnlCOVlv1Opn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlCOVlv1Opn.Location = new System.Drawing.Point(873, 536);
-			this.pnlCOVlv1Opn.Name = "pnlCOVlv1Opn";
-			this.pnlCOVlv1Opn.Size = new System.Drawing.Size(29, 39);
-			this.pnlCOVlv1Opn.TabIndex = 70;
+			this.pnlCOVlv1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCOVlv1.BackgroundImage")));
+			this.pnlCOVlv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlCOVlv1.Location = new System.Drawing.Point(873, 536);
+			this.pnlCOVlv1.Name = "pnlCOVlv1";
+			this.pnlCOVlv1.Size = new System.Drawing.Size(29, 39);
+			this.pnlCOVlv1.TabIndex = 70;
 			// 
 			// staticText14
 			// 
@@ -427,15 +441,15 @@ namespace PtGui
 			this.staticText11.Text = "HAND PUMP";
 			this.staticText11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlHandOn
+			// pnlHandPp
 			// 
-			this.pnlHandOn.BackColor = System.Drawing.Color.Transparent;
-			this.pnlHandOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlHandOn.BackgroundImage")));
-			this.pnlHandOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pnlHandOn.Location = new System.Drawing.Point(1020, 538);
-			this.pnlHandOn.Name = "pnlHandOn";
-			this.pnlHandOn.Size = new System.Drawing.Size(69, 94);
-			this.pnlHandOn.TabIndex = 77;
+			this.pnlHandPp.BackColor = System.Drawing.Color.Transparent;
+			this.pnlHandPp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlHandPp.BackgroundImage")));
+			this.pnlHandPp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pnlHandPp.Location = new System.Drawing.Point(1020, 538);
+			this.pnlHandPp.Name = "pnlHandPp";
+			this.pnlHandPp.Size = new System.Drawing.Size(69, 94);
+			this.pnlHandPp.TabIndex = 77;
 			// 
 			// pnlHandOff
 			// 
@@ -569,23 +583,23 @@ namespace PtGui
 			this.pnlSSSEngageGrey.Size = new System.Drawing.Size(54, 30);
 			this.pnlSSSEngageGrey.TabIndex = 68;
 			// 
-			// pnlTBOffGreen
+			// pnlTBOff
 			// 
-			this.pnlTBOffGreen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTBOffGreen.BackgroundImage")));
-			this.pnlTBOffGreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlTBOffGreen.Location = new System.Drawing.Point(1137, 254);
-			this.pnlTBOffGreen.Name = "pnlTBOffGreen";
-			this.pnlTBOffGreen.Size = new System.Drawing.Size(37, 30);
-			this.pnlTBOffGreen.TabIndex = 68;
+			this.pnlTBOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTBOff.BackgroundImage")));
+			this.pnlTBOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlTBOff.Location = new System.Drawing.Point(1137, 254);
+			this.pnlTBOff.Name = "pnlTBOff";
+			this.pnlTBOff.Size = new System.Drawing.Size(37, 30);
+			this.pnlTBOff.TabIndex = 68;
 			// 
-			// pnlTBOnGrey
+			// pnlTBOn
 			// 
-			this.pnlTBOnGrey.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTBOnGrey.BackgroundImage")));
-			this.pnlTBOnGrey.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlTBOnGrey.Location = new System.Drawing.Point(988, 254);
-			this.pnlTBOnGrey.Name = "pnlTBOnGrey";
-			this.pnlTBOnGrey.Size = new System.Drawing.Size(37, 30);
-			this.pnlTBOnGrey.TabIndex = 67;
+			this.pnlTBOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTBOn.BackgroundImage")));
+			this.pnlTBOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlTBOn.Location = new System.Drawing.Point(988, 254);
+			this.pnlTBOn.Name = "pnlTBOn";
+			this.pnlTBOn.Size = new System.Drawing.Size(37, 30);
+			this.pnlTBOn.TabIndex = 67;
 			// 
 			// lblSSS
 			// 
@@ -637,25 +651,15 @@ namespace PtGui
 			this.pnl3WayVlv.Size = new System.Drawing.Size(44, 62);
 			this.pnl3WayVlv.TabIndex = 63;
 			// 
-			// pnlClutchOn
+			// pnlClutchPp
 			// 
-			this.pnlClutchOn.BackColor = System.Drawing.Color.Transparent;
-			this.pnlClutchOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClutchOn.BackgroundImage")));
-			this.pnlClutchOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pnlClutchOn.Location = new System.Drawing.Point(136, 645);
-			this.pnlClutchOn.Name = "pnlClutchOn";
-			this.pnlClutchOn.Size = new System.Drawing.Size(69, 94);
-			this.pnlClutchOn.TabIndex = 62;
-			// 
-			// pnlClutchOff
-			// 
-			this.pnlClutchOff.BackColor = System.Drawing.Color.Transparent;
-			this.pnlClutchOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClutchOff.BackgroundImage")));
-			this.pnlClutchOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pnlClutchOff.Location = new System.Drawing.Point(136, 645);
-			this.pnlClutchOff.Name = "pnlClutchOff";
-			this.pnlClutchOff.Size = new System.Drawing.Size(69, 94);
-			this.pnlClutchOff.TabIndex = 61;
+			this.pnlClutchPp.BackColor = System.Drawing.Color.Transparent;
+			this.pnlClutchPp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClutchPp.BackgroundImage")));
+			this.pnlClutchPp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pnlClutchPp.Location = new System.Drawing.Point(136, 645);
+			this.pnlClutchPp.Name = "pnlClutchPp";
+			this.pnlClutchPp.Size = new System.Drawing.Size(69, 94);
+			this.pnlClutchPp.TabIndex = 61;
 			// 
 			// staticText10
 			// 
@@ -830,23 +834,23 @@ namespace PtGui
 			this.staticText7.Text = "CONTROL VALVE";
 			this.staticText7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlClutchEngUp
+			// pnlClutchEng
 			// 
-			this.pnlClutchEngUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClutchEngUp.BackgroundImage")));
-			this.pnlClutchEngUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlClutchEngUp.Location = new System.Drawing.Point(430, 581);
-			this.pnlClutchEngUp.Name = "pnlClutchEngUp";
-			this.pnlClutchEngUp.Size = new System.Drawing.Size(65, 48);
-			this.pnlClutchEngUp.TabIndex = 53;
+			this.pnlClutchEng.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClutchEng.BackgroundImage")));
+			this.pnlClutchEng.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlClutchEng.Location = new System.Drawing.Point(430, 581);
+			this.pnlClutchEng.Name = "pnlClutchEng";
+			this.pnlClutchEng.Size = new System.Drawing.Size(65, 48);
+			this.pnlClutchEng.TabIndex = 53;
 			// 
-			// pnlClutchDisUp
+			// pnlClutchDis
 			// 
-			this.pnlClutchDisUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClutchDisUp.BackgroundImage")));
-			this.pnlClutchDisUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlClutchDisUp.Location = new System.Drawing.Point(346, 581);
-			this.pnlClutchDisUp.Name = "pnlClutchDisUp";
-			this.pnlClutchDisUp.Size = new System.Drawing.Size(65, 48);
-			this.pnlClutchDisUp.TabIndex = 52;
+			this.pnlClutchDis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClutchDis.BackgroundImage")));
+			this.pnlClutchDis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlClutchDis.Location = new System.Drawing.Point(346, 581);
+			this.pnlClutchDis.Name = "pnlClutchDis";
+			this.pnlClutchDis.Size = new System.Drawing.Size(65, 48);
+			this.pnlClutchDis.TabIndex = 52;
 			// 
 			// lblSSSClutch
 			// 
@@ -862,13 +866,13 @@ namespace PtGui
 			this.lblSSSClutch.Text = "SSS CLUTCH";
 			this.lblSSSClutch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlTBIsolVlvOpn
+			// pnlTBIsolVlv
 			// 
-			this.pnlTBIsolVlvOpn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTBIsolVlvOpn.BackgroundImage")));
-			this.pnlTBIsolVlvOpn.Location = new System.Drawing.Point(106, 502);
-			this.pnlTBIsolVlvOpn.Name = "pnlTBIsolVlvOpn";
-			this.pnlTBIsolVlvOpn.Size = new System.Drawing.Size(33, 33);
-			this.pnlTBIsolVlvOpn.TabIndex = 50;
+			this.pnlTBIsolVlv.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTBIsolVlv.BackgroundImage")));
+			this.pnlTBIsolVlv.Location = new System.Drawing.Point(106, 502);
+			this.pnlTBIsolVlv.Name = "pnlTBIsolVlv";
+			this.pnlTBIsolVlv.Size = new System.Drawing.Size(33, 33);
+			this.pnlTBIsolVlv.TabIndex = 50;
 			// 
 			// staticText1
 			// 
@@ -947,53 +951,31 @@ namespace PtGui
     " . . . . .";
 			this.lblSelect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlStbdOff
+			// pnlStbd
 			// 
-			this.pnlStbdOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlStbdOff.BackgroundImage")));
-			this.pnlStbdOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pnlStbdOff.Controls.Add(this.lblStbdOff);
-			this.pnlStbdOff.Location = new System.Drawing.Point(1082, 134);
-			this.pnlStbdOff.Name = "pnlStbdOff";
-			this.pnlStbdOff.Size = new System.Drawing.Size(143, 80);
-			this.pnlStbdOff.TabIndex = 36;
+			this.pnlStbd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlStbd.BackgroundImage")));
+			this.pnlStbd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pnlStbd.Controls.Add(this.lblStbd);
+			this.pnlStbd.Location = new System.Drawing.Point(1082, 134);
+			this.pnlStbd.Name = "pnlStbd";
+			this.pnlStbd.Size = new System.Drawing.Size(143, 80);
+			this.pnlStbd.TabIndex = 36;
+			this.pnlStbd.Click += new System.EventHandler(this.pnlStbd_Click);
 			// 
-			// lblStbdOff
+			// lblStbd
 			// 
-			this.lblStbdOff.AutoSize = true;
-			this.lblStbdOff.BackColor = System.Drawing.Color.Transparent;
-			this.lblStbdOff.Cursor = System.Windows.Forms.Cursors.Arrow;
-			this.lblStbdOff.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStbdOff.ForeColor = System.Drawing.Color.White;
-			this.lblStbdOff.Location = new System.Drawing.Point(38, 28);
-			this.lblStbdOff.Name = "lblStbdOff";
-			this.lblStbdOff.Size = new System.Drawing.Size(67, 24);
-			this.lblStbdOff.TabIndex = 35;
-			this.lblStbdOff.Text = "STBD";
-			this.lblStbdOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// pnlPortOn
-			// 
-			this.pnlPortOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPortOn.BackgroundImage")));
-			this.pnlPortOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pnlPortOn.Controls.Add(this.lblPortOn);
-			this.pnlPortOn.Location = new System.Drawing.Point(42, 134);
-			this.pnlPortOn.Name = "pnlPortOn";
-			this.pnlPortOn.Size = new System.Drawing.Size(143, 80);
-			this.pnlPortOn.TabIndex = 35;
-			// 
-			// lblPortOn
-			// 
-			this.lblPortOn.AutoSize = true;
-			this.lblPortOn.BackColor = System.Drawing.Color.Transparent;
-			this.lblPortOn.Cursor = System.Windows.Forms.Cursors.Arrow;
-			this.lblPortOn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblPortOn.ForeColor = System.Drawing.Color.White;
-			this.lblPortOn.Location = new System.Drawing.Point(37, 27);
-			this.lblPortOn.Name = "lblPortOn";
-			this.lblPortOn.Size = new System.Drawing.Size(68, 24);
-			this.lblPortOn.TabIndex = 34;
-			this.lblPortOn.Text = "PORT";
-			this.lblPortOn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblStbd.AutoSize = true;
+			this.lblStbd.BackColor = System.Drawing.Color.Transparent;
+			this.lblStbd.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.lblStbd.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblStbd.ForeColor = System.Drawing.Color.White;
+			this.lblStbd.Location = new System.Drawing.Point(35, 28);
+			this.lblStbd.Name = "lblStbd";
+			this.lblStbd.Size = new System.Drawing.Size(67, 24);
+			this.lblStbd.TabIndex = 35;
+			this.lblStbd.Text = "STBD";
+			this.lblStbd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblStbd.Click += new System.EventHandler(this.pnlStbd_Click);
 			// 
 			// pnlIndRemote
 			// 
@@ -1011,25 +993,16 @@ namespace PtGui
 			this.pnlIndLocal.Size = new System.Drawing.Size(13, 13);
 			this.pnlIndLocal.TabIndex = 43;
 			// 
-			// pnlSWLocal
+			// pnlSWLocalRemote
 			// 
-			this.pnlSWLocal.BackColor = System.Drawing.Color.Transparent;
-			this.pnlSWLocal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlSWLocal.BackgroundImage")));
-			this.pnlSWLocal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlSWLocal.Location = new System.Drawing.Point(399, 414);
-			this.pnlSWLocal.Name = "pnlSWLocal";
-			this.pnlSWLocal.Size = new System.Drawing.Size(49, 50);
-			this.pnlSWLocal.TabIndex = 42;
-			// 
-			// pnlSWRemote
-			// 
-			this.pnlSWRemote.BackColor = System.Drawing.Color.Transparent;
-			this.pnlSWRemote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlSWRemote.BackgroundImage")));
-			this.pnlSWRemote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlSWRemote.Location = new System.Drawing.Point(399, 414);
-			this.pnlSWRemote.Name = "pnlSWRemote";
-			this.pnlSWRemote.Size = new System.Drawing.Size(49, 50);
-			this.pnlSWRemote.TabIndex = 41;
+			this.pnlSWLocalRemote.BackColor = System.Drawing.Color.Transparent;
+			this.pnlSWLocalRemote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlSWLocalRemote.BackgroundImage")));
+			this.pnlSWLocalRemote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlSWLocalRemote.Location = new System.Drawing.Point(399, 414);
+			this.pnlSWLocalRemote.Name = "pnlSWLocalRemote";
+			this.pnlSWLocalRemote.Size = new System.Drawing.Size(49, 50);
+			this.pnlSWLocalRemote.TabIndex = 42;
+			this.pnlSWLocalRemote.Click += new System.EventHandler(this.pnlSWLocalRemote_Click);
 			// 
 			// lblRemoteSW
 			// 
@@ -1083,7 +1056,7 @@ namespace PtGui
 			this.lblRemote.TabIndex = 34;
 			this.lblRemote.Text = "REMOTE";
 			this.lblRemote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lblRemote.Click += new System.EventHandler(this.lblRemote_Click);
+			this.lblRemote.Click += new System.EventHandler(this.pnlRemote_Click);
 			// 
 			// pnlLocal
 			// 
@@ -1109,7 +1082,7 @@ namespace PtGui
 			this.lblLocal.TabIndex = 34;
 			this.lblLocal.Text = "LOCAL";
 			this.lblLocal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lblLocal.Click += new System.EventHandler(this.lblLocal_Click);
+			this.lblLocal.Click += new System.EventHandler(this.pnlLocal_Click);
 			// 
 			// lblGearBoxLCP
 			// 
@@ -1147,6 +1120,7 @@ namespace PtGui
 			this.pnlShut.Name = "pnlShut";
 			this.pnlShut.Size = new System.Drawing.Size(96, 74);
 			this.pnlShut.TabIndex = 36;
+			this.pnlShut.Click += new System.EventHandler(this.pnlShut_Click);
 			// 
 			// lblShut
 			// 
@@ -1161,6 +1135,7 @@ namespace PtGui
 			this.lblShut.TabIndex = 34;
 			this.lblShut.Text = "SHUT";
 			this.lblShut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblShut.Click += new System.EventHandler(this.pnlShut_Click);
 			// 
 			// pnlOpen
 			// 
@@ -1171,6 +1146,7 @@ namespace PtGui
 			this.pnlOpen.Name = "pnlOpen";
 			this.pnlOpen.Size = new System.Drawing.Size(96, 74);
 			this.pnlOpen.TabIndex = 35;
+			this.pnlOpen.Click += new System.EventHandler(this.pnlOpen_Click);
 			// 
 			// lblOpen
 			// 
@@ -1185,54 +1161,7 @@ namespace PtGui
 			this.lblOpen.TabIndex = 34;
 			this.lblOpen.Text = "OPEN";
 			this.lblOpen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// pnlStbdOn
-			// 
-			this.pnlStbdOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlStbdOn.BackgroundImage")));
-			this.pnlStbdOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pnlStbdOn.Controls.Add(this.lblStbdOn);
-			this.pnlStbdOn.Location = new System.Drawing.Point(1082, 134);
-			this.pnlStbdOn.Name = "pnlStbdOn";
-			this.pnlStbdOn.Size = new System.Drawing.Size(143, 80);
-			this.pnlStbdOn.TabIndex = 33;
-			// 
-			// lblStbdOn
-			// 
-			this.lblStbdOn.AutoSize = true;
-			this.lblStbdOn.BackColor = System.Drawing.Color.Transparent;
-			this.lblStbdOn.Cursor = System.Windows.Forms.Cursors.Arrow;
-			this.lblStbdOn.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblStbdOn.ForeColor = System.Drawing.Color.White;
-			this.lblStbdOn.Location = new System.Drawing.Point(38, 28);
-			this.lblStbdOn.Name = "lblStbdOn";
-			this.lblStbdOn.Size = new System.Drawing.Size(67, 24);
-			this.lblStbdOn.TabIndex = 35;
-			this.lblStbdOn.Text = "STBD";
-			this.lblStbdOn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// pnlPortOff
-			// 
-			this.pnlPortOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPortOff.BackgroundImage")));
-			this.pnlPortOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pnlPortOff.Controls.Add(this.lblPort);
-			this.pnlPortOff.Location = new System.Drawing.Point(42, 134);
-			this.pnlPortOff.Name = "pnlPortOff";
-			this.pnlPortOff.Size = new System.Drawing.Size(143, 80);
-			this.pnlPortOff.TabIndex = 32;
-			// 
-			// lblPort
-			// 
-			this.lblPort.AutoSize = true;
-			this.lblPort.BackColor = System.Drawing.Color.Transparent;
-			this.lblPort.Cursor = System.Windows.Forms.Cursors.Arrow;
-			this.lblPort.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblPort.ForeColor = System.Drawing.Color.White;
-			this.lblPort.Location = new System.Drawing.Point(37, 26);
-			this.lblPort.Name = "lblPort";
-			this.lblPort.Size = new System.Drawing.Size(68, 24);
-			this.lblPort.TabIndex = 34;
-			this.lblPort.Text = "PORT";
-			this.lblPort.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblOpen.Click += new System.EventHandler(this.pnlOpen_Click);
 			// 
 			// pnlTop
 			// 
@@ -1312,6 +1241,8 @@ namespace PtGui
 			this.Text = "GB LCP";
 			this.pnlGB_LCP.ResumeLayout(false);
 			this.pnlGB_LCP.PerformLayout();
+			this.pnlPort.ResumeLayout(false);
+			this.pnlPort.PerformLayout();
 			this.pnlRelease.ResumeLayout(false);
 			this.pnlRelease.PerformLayout();
 			this.pnlOperate2.ResumeLayout(false);
@@ -1326,10 +1257,8 @@ namespace PtGui
 			this.pnlDisengage.ResumeLayout(false);
 			this.pnlDisengage.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.picArrowR)).EndInit();
-			this.pnlStbdOff.ResumeLayout(false);
-			this.pnlStbdOff.PerformLayout();
-			this.pnlPortOn.ResumeLayout(false);
-			this.pnlPortOn.PerformLayout();
+			this.pnlStbd.ResumeLayout(false);
+			this.pnlStbd.PerformLayout();
 			this.pnlRemote.ResumeLayout(false);
 			this.pnlRemote.PerformLayout();
 			this.pnlLocal.ResumeLayout(false);
@@ -1338,10 +1267,6 @@ namespace PtGui
 			this.pnlShut.PerformLayout();
 			this.pnlOpen.ResumeLayout(false);
 			this.pnlOpen.PerformLayout();
-			this.pnlStbdOn.ResumeLayout(false);
-			this.pnlStbdOn.PerformLayout();
-			this.pnlPortOff.ResumeLayout(false);
-			this.pnlPortOff.PerformLayout();
 			this.pnlTop.ResumeLayout(false);
 			this.pnlTopInner.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.PageBack)).EndInit();
@@ -1358,16 +1283,11 @@ namespace PtGui
 		private System.Windows.Forms.Label lblPageName;
 		private System.Windows.Forms.PictureBox PageBack;
 		private System.Windows.Forms.PictureBox PageFwd;
-		private System.Windows.Forms.Panel pnlStbdOn;
-		private System.Windows.Forms.Panel pnlPortOff;
-		private System.Windows.Forms.Label lblPort;
-		private System.Windows.Forms.Label lblStbdOn;
 		private System.Windows.Forms.Panel pnlShut;
 		private System.Windows.Forms.Label lblShut;
 		private System.Windows.Forms.Panel pnlOpen;
 		private System.Windows.Forms.Label lblOpen;
 		private System.Windows.Forms.Label lblLCPDoor;
-		private System.Windows.Forms.Panel pnlSWRemote;
 		private System.Windows.Forms.Label lblRemoteSW;
 		private System.Windows.Forms.Label lblLocalSW;
 		private System.Windows.Forms.Panel pnlRemote;
@@ -1377,21 +1297,19 @@ namespace PtGui
 		private System.Windows.Forms.Label lblGearBoxLCP;
 		private System.Windows.Forms.Panel pnlIndRemote;
 		private System.Windows.Forms.Panel pnlIndLocal;
-		private System.Windows.Forms.Panel pnlSWLocal;
-		private System.Windows.Forms.Panel pnlPortOn;
-		private System.Windows.Forms.Label lblPortOn;
+		private System.Windows.Forms.Panel pnlSWLocalRemote;
 		private System.Windows.Forms.Panel pnlTBVlvCLsd;
 		private System.Windows.Forms.Label staticText4;
 		private System.Windows.Forms.Label staticText3;
 		private System.Windows.Forms.Label staticText2;
 		private System.Windows.Forms.Label lblSelect;
-		private System.Windows.Forms.Panel pnlStbdOff;
-		private System.Windows.Forms.Label lblStbdOff;
-		private System.Windows.Forms.Panel pnlTBIsolVlvOpn;
+		private System.Windows.Forms.Panel pnlStbd;
+		private System.Windows.Forms.Label lblStbd;
+		private System.Windows.Forms.Panel pnlTBIsolVlv;
 		private System.Windows.Forms.Label staticText1;
 		private System.Windows.Forms.Label staticText7;
-		private System.Windows.Forms.Panel pnlClutchEngUp;
-		private System.Windows.Forms.Panel pnlClutchDisUp;
+		private System.Windows.Forms.Panel pnlClutchEng;
+		private System.Windows.Forms.Panel pnlClutchDis;
 		private System.Windows.Forms.Label lblSSSClutch;
 		private System.Windows.Forms.Label staticText10;
 		private System.Windows.Forms.Label staticText9;
@@ -1407,12 +1325,11 @@ namespace PtGui
 		private System.Windows.Forms.PictureBox picArrowR;
 		private System.Windows.Forms.Label lblDisengage;
 		private System.Windows.Forms.Panel pnl3WayVlv;
-		private System.Windows.Forms.Panel pnlClutchOff;
 		private System.Windows.Forms.Label staticText19;
 		private System.Windows.Forms.Label staticText13;
 		private System.Windows.Forms.Label staticText12;
 		private System.Windows.Forms.Label staticText11;
-		private System.Windows.Forms.Panel pnlHandOn;
+		private System.Windows.Forms.Panel pnlHandPp;
 		private System.Windows.Forms.Panel pnlHandOff;
 		private System.Windows.Forms.Panel pnlRelease;
 		private System.Windows.Forms.Label lblRelease;
@@ -1425,17 +1342,17 @@ namespace PtGui
 		private System.Windows.Forms.Panel pnlSSSBaulkGrey;
 		private System.Windows.Forms.Panel pnlSSSRatchetGrey;
 		private System.Windows.Forms.Panel pnlSSSEngageGrey;
-		private System.Windows.Forms.Panel pnlTBOffGreen;
-		private System.Windows.Forms.Panel pnlTBOnGrey;
+		private System.Windows.Forms.Panel pnlTBOff;
+		private System.Windows.Forms.Panel pnlTBOn;
 		private System.Windows.Forms.Label lblSSS;
 		private System.Windows.Forms.Label lblTransBrake;
 		private System.Windows.Forms.Label lblGearBoxState;
-		private System.Windows.Forms.Panel pnlClutchOn;
+		private System.Windows.Forms.Panel pnlClutchPp;
 		private System.Windows.Forms.Label staticText17;
 		private System.Windows.Forms.Label staticText16;
 		private System.Windows.Forms.Label staticText15;
-		private System.Windows.Forms.Panel pnlCOVlv2Clsd;
-		private System.Windows.Forms.Panel pnlCOVlv1Opn;
+		private System.Windows.Forms.Panel pnlCOVlv2;
+		private System.Windows.Forms.Panel pnlCOVlv1;
 		private System.Windows.Forms.Label staticText14;
 		private System.Windows.Forms.Panel pnlVlvClsd;
 		private System.Windows.Forms.Panel pnlOffGrey;
@@ -1444,5 +1361,7 @@ namespace PtGui
 		private System.Windows.Forms.Panel pnlLOWGreen;
 		private System.Windows.Forms.Label staticText18;
 		private System.Windows.Forms.Label lblOperatingPressure;
+		private System.Windows.Forms.Panel pnlPort;
+		private System.Windows.Forms.Label lblPort;
 	}
 }
