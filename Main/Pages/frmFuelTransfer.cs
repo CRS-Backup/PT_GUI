@@ -132,6 +132,60 @@ namespace PtGui
 			// LFRV5CS 
 
 		}
+
+		private void pnlPump1_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRITP1", Constants.PUMP_RUNNINGL, Constants.PUMP_STOPPEDL);
+			// LFRTP1RS
+
+		}
+
+		private void pnlPump2_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRITP2", Constants.PUMP_RUNNINGR, Constants.PUMP_STOPPEDR);
+			// LFRTP2RS
+		}
+
+		private void pnlVlvPumpIn_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV2", Constants.BMP_VALVE4_OPENED, Constants.BMP_VALVE4_CLOSED);
+			// LFRV2CS
+
+		}
+
+		private void pnlVlv2_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV3", Constants.BMP_VALVE1_OPENED, Constants.BMP_VALVE1_CLOSED);
+			// LFRV3CS
+
+		}
+
+		private void pnlVlvAftOut_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV1", Constants.BMP_VALVE2_OPENED, Constants.BMP_VALVE2_CLOSED);
+			// LFRV1CS
+
+		}
+
+		private void pnlCoalescer1_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRICP1", Constants.COALESCER_OPEN, Constants.COALESCER_CLOSED);
+			// LFRCP1CS
+		}
+
+		private void pnlCoalescer2_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRICP2", Constants.COALESCER_OPEN, Constants.COALESCER_CLOSED);
+			// LFRCP2CS
+
+		}
+
+		private void pnlVlv3_Click(object sender, EventArgs e)
+		{
+			GuiCore.toggle_channel(sender, "LFRIV4", Constants.BMP_VALVE3_OPENED, Constants.BMP_VALVE3_CLOSED);
+			// LFRV4CS
+
+		}
 	}
 }
 

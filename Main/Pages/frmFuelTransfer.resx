@@ -17425,7 +17425,7 @@
         UlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSAA==
 </value>
   </data>
-  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlVlvAftOut.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk1eDAAAAAAAADYEAAAoAAAAIQAAADoAAAABAAgAAAAAAAAAAACEEgAAhBIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -17734,7 +17734,7 @@
         Dw8PcHBwcAAAAA8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDwAAAA==
 </value>
   </data>
-  <data name="pnlCoalescer2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlCoalescer1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk0qBwAAAAAAADYEAAAoAAAAGQAAABsAAAABAAgAAAAAAAAAAADODgAAzg4AAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -17769,7 +17769,7 @@
         Dw8PAAAADw8PDw8PDw8PDw9wcHAPDw8PDw8PDw8PDwAAAA==
 </value>
   </data>
-  <data name="pnlCoalescer1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlCoalescer2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk0qBwAAAAAAADYEAAAoAAAAGQAAABsAAAABAAgAAAAAAAAAAADODgAAzg4AAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -17804,7 +17804,7 @@
         Dw8PAAAADw8PDw8PDw8PDw9wcHAPDw8PDw8PDw8PDwAAAA==
 </value>
   </data>
-  <data name="pnlPump1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlPump2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3GHwAAAAAAADYEAAAoAAAAVAAAAFQAAAABAAgAAAAAAAAAAACEEgAAhBIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -17944,7 +17944,7 @@
         Dw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw==
 </value>
   </data>
-  <data name="pnlVlvPumpClsd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlVlvPumpIn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3yCwAAAAAAADYEAAAoAAAAOgAAACEAAAABAAgAAAAAAAAAAACEEgAAhBIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb
@@ -17999,7 +17999,7 @@
         cHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHAPDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8AAA==
 </value>
   </data>
-  <data name="pnlPump2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlPump1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk3GHwAAAAAAADYEAAAoAAAAVAAAAFQAAAABAAgAAAAAAAAAAACEEgAAhBIAAAABAAAAAQAAAAAA/wAA
         gP8AgAD/AICA/4AAAP+AAID/gIAA/8DAwP/A3MD/8Mqm/wAAAP8AAAD/AAAA/wAAAP//////MzMz/9vb

@@ -73,6 +73,7 @@ namespace PtGui
 			this.PageBack = new System.Windows.Forms.PictureBox();
 			this.PageFwd = new System.Windows.Forms.PictureBox();
 			this.pnlVLV7 = new System.Windows.Forms.Panel();
+			this.pnlVLV8 = new System.Windows.Forms.Panel();
 			this.pnlTop.SuspendLayout();
 			this.pnlTopInner.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.PageBack)).BeginInit();
@@ -95,7 +96,7 @@ namespace PtGui
 			// 
 			this.pnl3WAY1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl3WAY1.BackgroundImage")));
 			this.pnl3WAY1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnl3WAY1.Location = new System.Drawing.Point(338, 132);
+			this.pnl3WAY1.Location = new System.Drawing.Point(344, 132);
 			this.pnl3WAY1.Name = "pnl3WAY1";
 			this.pnl3WAY1.Size = new System.Drawing.Size(44, 62);
 			this.pnl3WAY1.TabIndex = 66;
@@ -137,6 +138,7 @@ namespace PtGui
 			this.staticText4.TabIndex = 70;
 			this.staticText4.Text = "CONVR CABIN";
 			this.staticText4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText4.Click += new System.EventHandler(this.pnlVLV7_Click);
 			// 
 			// staticText5
 			// 
@@ -149,6 +151,7 @@ namespace PtGui
 			this.staticText5.TabIndex = 71;
 			this.staticText5.Text = "PLUMR BLOCK";
 			this.staticText5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText5.Click += new System.EventHandler(this.pnlVLV7_Click);
 			// 
 			// staticText6
 			// 
@@ -161,6 +164,7 @@ namespace PtGui
 			this.staticText6.TabIndex = 72;
 			this.staticText6.Text = "PROPN MOTOR COOLR";
 			this.staticText6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText6.Click += new System.EventHandler(this.pnlVLV7_Click);
 			// 
 			// staticText7
 			// 
@@ -179,24 +183,26 @@ namespace PtGui
 			this.staticText8.BackColor = System.Drawing.Color.Transparent;
 			this.staticText8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.staticText8.ForeColor = System.Drawing.Color.White;
-			this.staticText8.Location = new System.Drawing.Point(688, 354);
+			this.staticText8.Location = new System.Drawing.Point(670, 354);
 			this.staticText8.Name = "staticText8";
-			this.staticText8.Size = new System.Drawing.Size(75, 32);
+			this.staticText8.Size = new System.Drawing.Size(108, 32);
 			this.staticText8.TabIndex = 74;
 			this.staticText8.Text = "PORT MAIN LO COOLER";
 			this.staticText8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText8.Click += new System.EventHandler(this.pnlVLV2_Click);
 			// 
 			// staticText9
 			// 
 			this.staticText9.BackColor = System.Drawing.Color.Transparent;
 			this.staticText9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.staticText9.ForeColor = System.Drawing.Color.White;
-			this.staticText9.Location = new System.Drawing.Point(1013, 356);
+			this.staticText9.Location = new System.Drawing.Point(995, 357);
 			this.staticText9.Name = "staticText9";
-			this.staticText9.Size = new System.Drawing.Size(73, 32);
+			this.staticText9.Size = new System.Drawing.Size(109, 32);
 			this.staticText9.TabIndex = 75;
-			this.staticText9.Text = "  PORT GT   LO COOLER";
+			this.staticText9.Text = "PORT GT LO COOLER";
 			this.staticText9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText9.Click += new System.EventHandler(this.pnlVLV4_Click);
 			// 
 			// pnlPump1
 			// 
@@ -302,9 +308,9 @@ namespace PtGui
 			this.staticText16.BackColor = System.Drawing.Color.Transparent;
 			this.staticText16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.staticText16.ForeColor = System.Drawing.Color.White;
-			this.staticText16.Location = new System.Drawing.Point(688, 533);
+			this.staticText16.Location = new System.Drawing.Point(673, 533);
 			this.staticText16.Name = "staticText16";
-			this.staticText16.Size = new System.Drawing.Size(75, 32);
+			this.staticText16.Size = new System.Drawing.Size(105, 32);
 			this.staticText16.TabIndex = 82;
 			this.staticText16.Text = "STBD MAIN LO COOLER";
 			this.staticText16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -314,11 +320,11 @@ namespace PtGui
 			this.staticText17.BackColor = System.Drawing.Color.Transparent;
 			this.staticText17.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.staticText17.ForeColor = System.Drawing.Color.White;
-			this.staticText17.Location = new System.Drawing.Point(1012, 499);
+			this.staticText17.Location = new System.Drawing.Point(995, 499);
 			this.staticText17.Name = "staticText17";
-			this.staticText17.Size = new System.Drawing.Size(75, 32);
+			this.staticText17.Size = new System.Drawing.Size(109, 32);
 			this.staticText17.TabIndex = 83;
-			this.staticText17.Text = "  STBD GT   LO COOLER";
+			this.staticText17.Text = "STBD GT LO COOLER";
 			this.staticText17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// staticText20
@@ -332,6 +338,7 @@ namespace PtGui
 			this.staticText20.TabIndex = 86;
 			this.staticText20.Text = "PROPN MOTOR COOLR";
 			this.staticText20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText20.Click += new System.EventHandler(this.pnlVLV1_Click);
 			// 
 			// staticText19
 			// 
@@ -344,6 +351,7 @@ namespace PtGui
 			this.staticText19.TabIndex = 85;
 			this.staticText19.Text = "PLUMR BLOCK";
 			this.staticText19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText19.Click += new System.EventHandler(this.pnlVLV1_Click);
 			// 
 			// staticText18
 			// 
@@ -356,51 +364,57 @@ namespace PtGui
 			this.staticText18.TabIndex = 84;
 			this.staticText18.Text = "CONVR CABIN";
 			this.staticText18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.staticText18.Click += new System.EventHandler(this.pnlVLV1_Click);
 			// 
 			// pnlVLV1
 			// 
 			this.pnlVLV1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVLV1.BackgroundImage")));
 			this.pnlVLV1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVLV1.Location = new System.Drawing.Point(137, 540);
+			this.pnlVLV1.Location = new System.Drawing.Point(137, 542);
 			this.pnlVLV1.Name = "pnlVLV1";
 			this.pnlVLV1.Size = new System.Drawing.Size(33, 33);
 			this.pnlVLV1.TabIndex = 87;
+			this.pnlVLV1.Click += new System.EventHandler(this.pnlVLV1_Click);
 			// 
 			// pnlVLV2
 			// 
 			this.pnlVLV2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVLV2.BackgroundImage")));
 			this.pnlVLV2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVLV2.Location = new System.Drawing.Point(682, 304);
+			this.pnlVLV2.Location = new System.Drawing.Point(685, 304);
 			this.pnlVLV2.Name = "pnlVLV2";
 			this.pnlVLV2.Size = new System.Drawing.Size(58, 33);
 			this.pnlVLV2.TabIndex = 88;
+			this.pnlVLV2.Click += new System.EventHandler(this.pnlVLV2_Click);
 			// 
 			// pnlVLV3
 			// 
 			this.pnlVLV3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVLV3.BackgroundImage")));
 			this.pnlVLV3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVLV3.Location = new System.Drawing.Point(682, 581);
+			this.pnlVLV3.Location = new System.Drawing.Point(685, 581);
 			this.pnlVLV3.Name = "pnlVLV3";
 			this.pnlVLV3.Size = new System.Drawing.Size(58, 33);
 			this.pnlVLV3.TabIndex = 89;
+			this.pnlVLV3.Click += new System.EventHandler(this.pnlVLV3_Click);
 			// 
 			// pnlVLV4
 			// 
 			this.pnlVLV4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVLV4.BackgroundImage")));
 			this.pnlVLV4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVLV4.Location = new System.Drawing.Point(989, 287);
+			this.pnlVLV4.Location = new System.Drawing.Point(992, 290);
 			this.pnlVLV4.Name = "pnlVLV4";
 			this.pnlVLV4.Size = new System.Drawing.Size(33, 33);
 			this.pnlVLV4.TabIndex = 88;
+			this.pnlVLV4.Click += new System.EventHandler(this.pnlVLV4_Click);
 			// 
 			// pnlVLV5
 			// 
 			this.pnlVLV5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVLV5.BackgroundImage")));
 			this.pnlVLV5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVLV5.Location = new System.Drawing.Point(1013, 559);
+			this.pnlVLV5.Location = new System.Drawing.Point(1017, 561);
 			this.pnlVLV5.Name = "pnlVLV5";
 			this.pnlVLV5.Size = new System.Drawing.Size(33, 33);
 			this.pnlVLV5.TabIndex = 89;
+			this.pnlVLV5.Click += new System.EventHandler(this.pnlVLV5_Click);
 			// 
 			// staticText21
 			// 
@@ -433,7 +447,7 @@ namespace PtGui
 			this.staticText23.BackColor = System.Drawing.Color.Transparent;
 			this.staticText23.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.staticText23.ForeColor = System.Drawing.Color.White;
-			this.staticText23.Location = new System.Drawing.Point(1194, 399);
+			this.staticText23.Location = new System.Drawing.Point(1196, 399);
 			this.staticText23.Name = "staticText23";
 			this.staticText23.Size = new System.Drawing.Size(26, 14);
 			this.staticText23.TabIndex = 92;
@@ -444,10 +458,11 @@ namespace PtGui
 			// 
 			this.pnlVLV6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVLV6.BackgroundImage")));
 			this.pnlVLV6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVLV6.Location = new System.Drawing.Point(1190, 559);
+			this.pnlVLV6.Location = new System.Drawing.Point(1194, 559);
 			this.pnlVLV6.Name = "pnlVLV6";
 			this.pnlVLV6.Size = new System.Drawing.Size(58, 33);
 			this.pnlVLV6.TabIndex = 90;
+			this.pnlVLV6.Click += new System.EventHandler(this.pnlVLV6_Click);
 			// 
 			// staticText24
 			// 
@@ -568,10 +583,21 @@ namespace PtGui
 			// 
 			this.pnlVLV7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVLV7.BackgroundImage")));
 			this.pnlVLV7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVLV7.Location = new System.Drawing.Point(137, 304);
+			this.pnlVLV7.Location = new System.Drawing.Point(137, 303);
 			this.pnlVLV7.Name = "pnlVLV7";
 			this.pnlVLV7.Size = new System.Drawing.Size(33, 33);
 			this.pnlVLV7.TabIndex = 98;
+			this.pnlVLV7.Click += new System.EventHandler(this.pnlVLV7_Click);
+			// 
+			// pnlVLV8
+			// 
+			this.pnlVLV8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVLV8.BackgroundImage")));
+			this.pnlVLV8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlVLV8.Location = new System.Drawing.Point(444, 285);
+			this.pnlVLV8.Name = "pnlVLV8";
+			this.pnlVLV8.Size = new System.Drawing.Size(33, 33);
+			this.pnlVLV8.TabIndex = 99;
+			this.pnlVLV8.Click += new System.EventHandler(this.pnlVLV8_Click);
 			// 
 			// frmLPSW1
 			// 
@@ -581,6 +607,7 @@ namespace PtGui
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.ClientSize = new System.Drawing.Size(1280, 791);
+			this.Controls.Add(this.pnlVLV8);
 			this.Controls.Add(this.pnlVLV7);
 			this.Controls.Add(this.pnlTop);
 			this.Controls.Add(this.staticText27);
@@ -676,5 +703,6 @@ namespace PtGui
 		private System.Windows.Forms.PictureBox PageBack;
 		private System.Windows.Forms.PictureBox PageFwd;
 		private System.Windows.Forms.Panel pnlVLV7;
+		private System.Windows.Forms.Panel pnlVLV8;
 	}
 }

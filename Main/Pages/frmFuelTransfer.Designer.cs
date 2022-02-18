@@ -31,12 +31,13 @@ namespace PtGui
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFuelTransfer));
 			this.pnlPanelTest = new System.Windows.Forms.Panel();
+			this.pnlVlv3 = new System.Windows.Forms.Panel();
 			this.pnlTop = new System.Windows.Forms.Panel();
 			this.pnlTopInner = new System.Windows.Forms.Panel();
 			this.lblPageName = new System.Windows.Forms.Label();
 			this.PageBack = new System.Windows.Forms.PictureBox();
 			this.PageFwd = new System.Windows.Forms.PictureBox();
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.pnlVlvAftOut = new System.Windows.Forms.Panel();
 			this.pnlVlvOverflowOut = new System.Windows.Forms.Panel();
 			this.pnlVlvTank10 = new System.Windows.Forms.Panel();
 			this.pnlVlvTank9 = new System.Windows.Forms.Panel();
@@ -66,14 +67,14 @@ namespace PtGui
 			this.staticText17 = new System.Windows.Forms.Label();
 			this.staticText16 = new System.Windows.Forms.Label();
 			this.pnlVlv2 = new System.Windows.Forms.Panel();
-			this.pnlCoalescer2 = new System.Windows.Forms.Panel();
 			this.pnlCoalescer1 = new System.Windows.Forms.Panel();
-			this.pnlPump1 = new System.Windows.Forms.Panel();
+			this.pnlCoalescer2 = new System.Windows.Forms.Panel();
+			this.pnlPump2 = new System.Windows.Forms.Panel();
 			this.staticText15 = new System.Windows.Forms.Label();
 			this.staticText14 = new System.Windows.Forms.Label();
 			this.staticText13 = new System.Windows.Forms.Label();
-			this.pnlVlvPumpClsd = new System.Windows.Forms.Panel();
-			this.pnlPump2 = new System.Windows.Forms.Panel();
+			this.pnlVlvPumpIn = new System.Windows.Forms.Panel();
+			this.pnlPump1 = new System.Windows.Forms.Panel();
 			this.staticText12 = new System.Windows.Forms.Label();
 			this.staticText11 = new System.Windows.Forms.Label();
 			this.staticText10 = new System.Windows.Forms.Label();
@@ -97,7 +98,6 @@ namespace PtGui
 			this.staticText3 = new System.Windows.Forms.Label();
 			this.staticText2 = new System.Windows.Forms.Label();
 			this.staticText1 = new System.Windows.Forms.Label();
-			this.pnlVlv3 = new System.Windows.Forms.Panel();
 			this.pnlPanelTest.SuspendLayout();
 			this.pnlTop.SuspendLayout();
 			this.pnlTopInner.SuspendLayout();
@@ -111,7 +111,7 @@ namespace PtGui
 			this.pnlPanelTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.pnlPanelTest.Controls.Add(this.pnlVlv3);
 			this.pnlPanelTest.Controls.Add(this.pnlTop);
-			this.pnlPanelTest.Controls.Add(this.panel1);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvAftOut);
 			this.pnlPanelTest.Controls.Add(this.pnlVlvOverflowOut);
 			this.pnlPanelTest.Controls.Add(this.pnlVlvTank10);
 			this.pnlPanelTest.Controls.Add(this.pnlVlvTank9);
@@ -141,14 +141,14 @@ namespace PtGui
 			this.pnlPanelTest.Controls.Add(this.staticText17);
 			this.pnlPanelTest.Controls.Add(this.staticText16);
 			this.pnlPanelTest.Controls.Add(this.pnlVlv2);
-			this.pnlPanelTest.Controls.Add(this.pnlCoalescer2);
 			this.pnlPanelTest.Controls.Add(this.pnlCoalescer1);
-			this.pnlPanelTest.Controls.Add(this.pnlPump1);
+			this.pnlPanelTest.Controls.Add(this.pnlCoalescer2);
+			this.pnlPanelTest.Controls.Add(this.pnlPump2);
 			this.pnlPanelTest.Controls.Add(this.staticText15);
 			this.pnlPanelTest.Controls.Add(this.staticText14);
 			this.pnlPanelTest.Controls.Add(this.staticText13);
-			this.pnlPanelTest.Controls.Add(this.pnlVlvPumpClsd);
-			this.pnlPanelTest.Controls.Add(this.pnlPump2);
+			this.pnlPanelTest.Controls.Add(this.pnlVlvPumpIn);
+			this.pnlPanelTest.Controls.Add(this.pnlPump1);
 			this.pnlPanelTest.Controls.Add(this.staticText12);
 			this.pnlPanelTest.Controls.Add(this.staticText11);
 			this.pnlPanelTest.Controls.Add(this.staticText10);
@@ -178,6 +178,17 @@ namespace PtGui
 			this.pnlPanelTest.Name = "pnlPanelTest";
 			this.pnlPanelTest.Size = new System.Drawing.Size(1280, 791);
 			this.pnlPanelTest.TabIndex = 0;
+			// 
+			// pnlVlv3
+			// 
+			this.pnlVlv3.BackColor = System.Drawing.Color.Transparent;
+			this.pnlVlv3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv3.BackgroundImage")));
+			this.pnlVlv3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlVlv3.Location = new System.Drawing.Point(462, 626);
+			this.pnlVlv3.Name = "pnlVlv3";
+			this.pnlVlv3.Size = new System.Drawing.Size(33, 33);
+			this.pnlVlv3.TabIndex = 90;
+			this.pnlVlv3.Click += new System.EventHandler(this.pnlVlv3_Click);
 			// 
 			// pnlTop
 			// 
@@ -242,15 +253,16 @@ namespace PtGui
 			this.PageFwd.TabStop = false;
 			this.PageFwd.Click += new System.EventHandler(this.PageFwd_Click);
 			// 
-			// panel1
+			// pnlVlvAftOut
 			// 
-			this.panel1.BackColor = System.Drawing.Color.Transparent;
-			this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-			this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.panel1.Location = new System.Drawing.Point(205, 556);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(33, 58);
-			this.panel1.TabIndex = 88;
+			this.pnlVlvAftOut.BackColor = System.Drawing.Color.Transparent;
+			this.pnlVlvAftOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvAftOut.BackgroundImage")));
+			this.pnlVlvAftOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlVlvAftOut.Location = new System.Drawing.Point(205, 556);
+			this.pnlVlvAftOut.Name = "pnlVlvAftOut";
+			this.pnlVlvAftOut.Size = new System.Drawing.Size(33, 58);
+			this.pnlVlvAftOut.TabIndex = 88;
+			this.pnlVlvAftOut.Click += new System.EventHandler(this.pnlVlvAftOut_Click);
 			// 
 			// pnlVlvOverflowOut
 			// 
@@ -641,35 +653,39 @@ namespace PtGui
 			this.pnlVlv2.Name = "pnlVlv2";
 			this.pnlVlv2.Size = new System.Drawing.Size(33, 33);
 			this.pnlVlv2.TabIndex = 48;
-			// 
-			// pnlCoalescer2
-			// 
-			this.pnlCoalescer2.BackColor = System.Drawing.Color.Transparent;
-			this.pnlCoalescer2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCoalescer2.BackgroundImage")));
-			this.pnlCoalescer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlCoalescer2.Location = new System.Drawing.Point(864, 448);
-			this.pnlCoalescer2.Name = "pnlCoalescer2";
-			this.pnlCoalescer2.Size = new System.Drawing.Size(25, 27);
-			this.pnlCoalescer2.TabIndex = 62;
+			this.pnlVlv2.Click += new System.EventHandler(this.pnlVlv2_Click);
 			// 
 			// pnlCoalescer1
 			// 
 			this.pnlCoalescer1.BackColor = System.Drawing.Color.Transparent;
 			this.pnlCoalescer1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCoalescer1.BackgroundImage")));
 			this.pnlCoalescer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlCoalescer1.Location = new System.Drawing.Point(606, 662);
+			this.pnlCoalescer1.Location = new System.Drawing.Point(864, 448);
 			this.pnlCoalescer1.Name = "pnlCoalescer1";
 			this.pnlCoalescer1.Size = new System.Drawing.Size(25, 27);
-			this.pnlCoalescer1.TabIndex = 61;
+			this.pnlCoalescer1.TabIndex = 62;
+			this.pnlCoalescer1.Click += new System.EventHandler(this.pnlCoalescer1_Click);
 			// 
-			// pnlPump1
+			// pnlCoalescer2
 			// 
-			this.pnlPump1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump1.BackgroundImage")));
-			this.pnlPump1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlPump1.Location = new System.Drawing.Point(293, 635);
-			this.pnlPump1.Name = "pnlPump1";
-			this.pnlPump1.Size = new System.Drawing.Size(84, 84);
-			this.pnlPump1.TabIndex = 60;
+			this.pnlCoalescer2.BackColor = System.Drawing.Color.Transparent;
+			this.pnlCoalescer2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCoalescer2.BackgroundImage")));
+			this.pnlCoalescer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlCoalescer2.Location = new System.Drawing.Point(606, 662);
+			this.pnlCoalescer2.Name = "pnlCoalescer2";
+			this.pnlCoalescer2.Size = new System.Drawing.Size(25, 27);
+			this.pnlCoalescer2.TabIndex = 61;
+			this.pnlCoalescer2.Click += new System.EventHandler(this.pnlCoalescer2_Click);
+			// 
+			// pnlPump2
+			// 
+			this.pnlPump2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump2.BackgroundImage")));
+			this.pnlPump2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlPump2.Location = new System.Drawing.Point(293, 635);
+			this.pnlPump2.Name = "pnlPump2";
+			this.pnlPump2.Size = new System.Drawing.Size(84, 84);
+			this.pnlPump2.TabIndex = 60;
+			this.pnlPump2.Click += new System.EventHandler(this.pnlPump2_Click);
 			// 
 			// staticText15
 			// 
@@ -711,22 +727,24 @@ namespace PtGui
 			this.staticText13.Text = "EMGY SUPPLY TO FAMR DG\'S";
 			this.staticText13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlVlvPumpClsd
+			// pnlVlvPumpIn
 			// 
-			this.pnlVlvPumpClsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvPumpClsd.BackgroundImage")));
-			this.pnlVlvPumpClsd.Location = new System.Drawing.Point(1003, 551);
-			this.pnlVlvPumpClsd.Name = "pnlVlvPumpClsd";
-			this.pnlVlvPumpClsd.Size = new System.Drawing.Size(58, 33);
-			this.pnlVlvPumpClsd.TabIndex = 45;
+			this.pnlVlvPumpIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlvPumpIn.BackgroundImage")));
+			this.pnlVlvPumpIn.Location = new System.Drawing.Point(1003, 551);
+			this.pnlVlvPumpIn.Name = "pnlVlvPumpIn";
+			this.pnlVlvPumpIn.Size = new System.Drawing.Size(58, 33);
+			this.pnlVlvPumpIn.TabIndex = 45;
+			this.pnlVlvPumpIn.Click += new System.EventHandler(this.pnlVlvPumpIn_Click);
 			// 
-			// pnlPump2
+			// pnlPump1
 			// 
-			this.pnlPump2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump2.BackgroundImage")));
-			this.pnlPump2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlPump2.Location = new System.Drawing.Point(913, 494);
-			this.pnlPump2.Name = "pnlPump2";
-			this.pnlPump2.Size = new System.Drawing.Size(84, 84);
-			this.pnlPump2.TabIndex = 47;
+			this.pnlPump1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPump1.BackgroundImage")));
+			this.pnlPump1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pnlPump1.Location = new System.Drawing.Point(913, 494);
+			this.pnlPump1.Name = "pnlPump1";
+			this.pnlPump1.Size = new System.Drawing.Size(84, 84);
+			this.pnlPump1.TabIndex = 47;
+			this.pnlPump1.Click += new System.EventHandler(this.pnlPump1_Click);
 			// 
 			// staticText12
 			// 
@@ -988,16 +1006,6 @@ namespace PtGui
 			this.staticText1.Text = "AFT DECK CONNS";
 			this.staticText1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pnlVlv3
-			// 
-			this.pnlVlv3.BackColor = System.Drawing.Color.Transparent;
-			this.pnlVlv3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlVlv3.BackgroundImage")));
-			this.pnlVlv3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pnlVlv3.Location = new System.Drawing.Point(462, 626);
-			this.pnlVlv3.Name = "pnlVlv3";
-			this.pnlVlv3.Size = new System.Drawing.Size(33, 33);
-			this.pnlVlv3.TabIndex = 90;
-			// 
 			// frmFuelTransfer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1044,16 +1052,16 @@ namespace PtGui
 		private System.Windows.Forms.Panel pnlVlvTank2;
 		private System.Windows.Forms.Panel pnlVlvTank1;
 		private System.Windows.Forms.Panel pnlVlv1;
-		private System.Windows.Forms.Panel pnlPump2;
 		private System.Windows.Forms.Panel pnlPump1;
+		private System.Windows.Forms.Panel pnlPump2;
 		private System.Windows.Forms.Label staticText15;
 		private System.Windows.Forms.Label staticText14;
 		private System.Windows.Forms.Label staticText13;
-		private System.Windows.Forms.Panel pnlVlvPumpClsd;
+		private System.Windows.Forms.Panel pnlVlvPumpIn;
 		private System.Windows.Forms.Label staticText16;
 		private System.Windows.Forms.Panel pnlVlv2;
-		private System.Windows.Forms.Panel pnlCoalescer2;
 		private System.Windows.Forms.Panel pnlCoalescer1;
+		private System.Windows.Forms.Panel pnlCoalescer2;
 		private System.Windows.Forms.Label staticText19;
 		private System.Windows.Forms.Label staticText18;
 		private System.Windows.Forms.Label staticText17;
@@ -1067,7 +1075,7 @@ namespace PtGui
 		private System.Windows.Forms.Label staticText23;
 		private System.Windows.Forms.Label staticText22;
 		private System.Windows.Forms.Label staticText21;
-		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel pnlVlvAftOut;
 		private System.Windows.Forms.Panel pnlTop;
 		private System.Windows.Forms.Panel pnlTopInner;
 		private System.Windows.Forms.Label lblPageName;

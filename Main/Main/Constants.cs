@@ -153,5 +153,12 @@ namespace PtGui
         public const string PUMP_RUNNINGL= BMP_FOLDER + "boost_open.bmp";
         public const string PUMP_STOPPEDL = BMP_FOLDER + "boost_closed.bmp";
 
+        public const string PUMP_RUNNINGR = BMP_FOLDER + "boost_open_r.bmp";
+        public const string PUMP_STOPPEDR = BMP_FOLDER + "boost_closed_r.bmp";
+
+        //Coalescer
+        public const string COALESCER_OPEN = BMP_FOLDER + "c_open.bmp";
+        public const string COALESCER_CLOSED = BMP_FOLDER + "c_closed.bmp";
+
     }
 }
